@@ -1,0 +1,103 @@
+html, body {
+    height: 100%; /* Asegura que el body ocupe el 100% del viewport */
+    margin: 0;
+    padding: 0;
+}
+
+.container-padre{
+    width: 100%;
+    height: 100%;
+    background: #000;
+    display: grid;
+    grid-template-columns: repeat( 7,1fr);
+    grid-template-rows: repeat(4,170px);
+    row-gap: 7px;
+    column-gap: 7px;
+    grid-template-areas: 
+        "hija1 hija2 hija3 hija4 hija4 hija5 hija5"
+         "hija6 hija6 hija7 hija7 hija7 hija8 hija9"
+        "hija10 hija11 hija7 hija7 hija7 hija8 hija9 "
+        "hija12 hija12 hija13 hija13 hija13 hija14 hija14";
+
+    
+
+}
+    .container-padre div{
+        background:#696969 ;
+        border-radius: 8px;
+    }
+    .container-hijas1{
+        display: grid;
+        grid-template-rows: 2fr 1fr;
+        grid-area:hija1 ;
+    }
+        .container-hijas1 p{
+            grid-row:2/-2;
+            margin-left: 45px;
+            margin-top:25px;
+        }
+    .container-hijas2{
+        display: grid;
+        grid-template-rows: 1fr 3fr 1fr;
+        grid-area:hija2 ;
+    }
+        .texto2-1{
+            grid-row:3 / -2;
+            margin-left: 50px;
+        }
+        .texto2{
+            margin-left:65px
+        }
+    .container-hijas3{
+        display: grid;
+        grid-template-rows: 1fr 3fr 1fr;
+        grid-area:hija3 ;
+    }
+        .texto3{
+
+        }
+
+    .container-hijas4{
+        
+        grid-area:hija4 ;
+    }
+    .container-hijas5{
+        
+        grid-area:hija5 ;
+    }
+    .container-hijas6{
+        
+        grid-area:hija6 ;
+    }
+    .container-hijas7{
+        
+        grid-area:hija7 ;
+    }
+    .container-hijas8{
+        
+        grid-area: hija8;
+    }
+    .container-hijas9{
+        
+        grid-area: hija9;
+    }
+        .container-hijas10{
+            
+            grid-area:hija10 ;
+        }
+        .container-hijas11{
+            
+            grid-area: hija11;
+        }
+        .container-hijas12{
+            
+            grid-area: hija12;
+        }
+        .container-hijas13{
+            
+            grid-area: hija13;
+        }
+        .container-hijas14{
+            grid-area:hija14;
+        }
+      
