@@ -1,0 +1,835 @@
+/*Partes del header*/
+
+
+
+.container-header{
+    width: auto;
+    height: 150px;
+    display:flex;
+    
+    justify-content: space-between;
+    background-color: chartreuse;
+
+}
+.container-image{
+    background-color: cadetblue;
+    width: 150px;
+    height:150px ;
+}
+/*Contiene los otros iconos*/
+.container-directions{
+
+    
+    width: auto;
+    height: 120px;
+    display: flex;
+    margin-top: 30px;
+    margin-right: 40px;
+    
+    
+        
+
+}
+
+.direction-1{
+    
+    width: 120px;
+    height: 120px;
+
+    
+}
+.direction-2{
+    
+    width: 120px;
+    height: 120px;
+}
+.direction-3{
+    
+    width: 120px;
+    height: 120px;
+}
+
+/*imagenes del direction*/
+
+.image-direction1{
+    height: 60px;
+    width: 60px;
+
+}
+.image-direction2{
+    height: 60px;
+    width: 60px;
+
+}
+.image-direction3{
+    height: 60px;
+    width: 60px;
+
+}
+
+
+/*Contenedor del cuerpo*/
+
+.container-body{
+
+    width: auto;
+    height: 550px;
+    display: flex;
+    justify-content: space-between;
+    background-color: blueviolet;
+
+}
+
+.body-text{
+    width: 1199px;
+    height:00px ;
+    display:flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    
+
+
+    
+}
+
+.text1{
+    
+    height: 500px;
+    width: 600px;
+    background-color: beige;
+    
+
+}
+.text2{
+    
+    height: 500px;
+    width: 500px;
+    background-color: beige;
+
+}
+aside{
+    
+    width: 400px;
+    height:500px;
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-right: 20px; 
+    background-color: beige;
+    
+}
+/*texto del cuerpo y aside*/
+.body_lorem1{
+    
+    width: 600px;
+    height: auto;
+    font-size: 200%;
+
+}
+.body_lorem2{
+    
+    width: 500px;
+    height: auto;
+    font-size: 183%;
+
+}
+.aside_lorem{
+    
+    width: 320px;
+    height: auto;
+    font-size: 153%;
+
+}
+
+/*Partes del footer*/
+
+.container-footer{
+
+   background-color: aqua;
+    width: auto;
+    height: 200px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-browser{
+   
+    width: 400px;
+    height: 170px;
+    margin-top: 10px;
+    margin-left: 15px;
+   
+
+}
+.footer-images{
+   
+    width: 400px;
+    height: 170px;
+    margin-top: 10px;
+    margin-left: 15px;
+    display: inline-table;
+
+}
+.footer-text{
+    
+    width: 400px;
+    height: 170px;
+    margin-top: 10px;
+    margin-left: 15px;
+    
+
+}
+
+/*dentro del container footer-images*/
+
+.footer-images1{
+    
+    width: 47px;
+    height: 47px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 100px;
+
+
+}
+.footer-images2{
+    
+    width: 47px;
+    height: 47px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 100px;
+
+}
+.footer-images3{
+    
+    width: 47px;
+    height: 47px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 100px;
+
+}
+
+/*Dentro del contenedor de footer-text*/
+
+.p1-footer{
+    margin-top: 15px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+
+}
+.p2-footer{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+
+}
+.p3-footer{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+
+}
+/*Dentro de footer-images*/
+.browser1{
+    
+    margin-top: 25px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    
+
+}
+.browser2{
+    
+    margin-top: 20px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+
+}
+.browser3{
+    
+    margin-top: 20px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    
+}
+
+a{
+    margin-top: 60px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*Mediaquery Responsive*/
+
+  /* Estilos para tablets */
+  @media (min-width: 480px) and (max-width: 767px) {
+    /*Partes del header*/
+
+
+
+.container-header{
+    width: auto;
+    height: 150px;
+    display:flex;
+    
+    justify-content: space-between;
+    background-color: chartreuse;
+
+}
+.container-image{
+    background-color: cadetblue;
+    width: 150px;
+    height:150px ;
+}
+/*Contiene los otros iconos*/
+.container-directions{
+
+    
+    width: auto;
+    height: 120px;
+    display: flex;
+    margin-top: 30px;
+    margin-right: 40px;
+    
+    
+        
+
+}
+
+.direction-1{
+    
+    width: 120px;
+    height: 120px;
+
+    
+}
+.direction-2{
+    
+    width: 120px;
+    height: 120px;
+}
+.direction-3{
+    
+    width: 120px;
+    height: 120px;
+}
+
+/*imagenes del direction*/
+
+.image-direction1{
+    height: 60px;
+    width: 60px;
+
+}
+.image-direction2{
+    height: 60px;
+    width: 60px;
+
+}
+.image-direction3{
+    height: 60px;
+    width: 60px;
+
+}
+
+
+/*Contenedor del cuerpo*/
+
+.container-body{
+
+    width: auto;
+    height: 550px;
+    display: flex;
+    justify-content: space-between;
+    background-color: blueviolet;
+
+}
+
+.body-text{
+    width: 1199px;
+    height:00px ;
+    display:flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    
+
+
+    
+}
+
+.text1{
+    
+    height: 500px;
+    width: 600px;
+    background-color: beige;
+    
+
+}
+.text2{
+    
+    height: 500px;
+    width: 500px;
+    background-color: beige;
+
+}
+aside{
+    
+    width: 400px;
+    height:500px;
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-right: 20px; 
+    background-color: beige;
+    
+}
+/*texto del cuerpo y aside*/
+.body_lorem1{
+    
+    width: 600px;
+    height: auto;
+    font-size: 200%;
+
+}
+.body_lorem2{
+    
+    width: 500px;
+    height: auto;
+    font-size: 183%;
+
+}
+.aside_lorem{
+    
+    width: 320px;
+    height: auto;
+    font-size: 153%;
+
+}
+
+/*Partes del footer*/
+
+.container-footer{
+
+   background-color: aqua;
+    width: auto;
+    height: 200px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-browser{
+   
+    width: 400px;
+    height: 170px;
+    margin-top: 10px;
+    margin-left: 15px;
+   
+
+}
+.footer-images{
+   
+    width: 400px;
+    height: 170px;
+    margin-top: 10px;
+    margin-left: 15px;
+    display: inline-table;
+
+}
+.footer-text{
+    
+    width: 400px;
+    height: 170px;
+    margin-top: 10px;
+    margin-left: 15px;
+    
+
+}
+
+/*dentro del container footer-images*/
+
+.footer-images1{
+    
+    width: 47px;
+    height: 47px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 100px;
+
+
+}
+.footer-images2{
+    
+    width: 47px;
+    height: 47px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 100px;
+
+}
+.footer-images3{
+    
+    width: 47px;
+    height: 47px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 100px;
+
+}
+
+/*Dentro del contenedor de footer-text*/
+
+.p1-footer{
+    margin-top: 15px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+
+}
+.p2-footer{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+
+}
+.p3-footer{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+
+}
+/*Dentro de footer-images*/
+.browser1{
+    
+    margin-top: 25px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    
+
+}
+.browser2{
+    
+    margin-top: 20px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+
+}
+.browser3{
+    
+    margin-top: 20px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    
+}
+
+a{
+    margin-top: 60px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+
+}
+
+
+  
+  }
+  
+  /* Estilos para móviles */
+  @media (max-width: 479px) {
+    /*Partes del header*/
+
+
+
+.container-header{
+    width: 342px;
+    height: 120px;
+    display:flex;
+    
+    justify-content: space-between;
+    background-color: chartreuse;
+
+}
+.container-image{
+    background-color: cadetblue;
+    margin-top: 20px;
+    width: 70px;
+    height:70px ;
+}
+/*Contiene los otros iconos*/
+.container-directions{
+
+    
+    width: 50px;
+    height: 50px;
+    display: flex;
+    margin-top: 25px;
+    margin-right: 160px;
+    
+    
+    
+    
+        
+
+}
+
+.direction-1{
+    
+    width: 30px;
+    height: 30px;
+    margin-right: 40px;
+   
+
+    
+}
+.direction-2{
+    
+    width: 30px;
+    height: 30px;
+    margin-right: 40px;
+    
+}
+.direction-3{
+    
+    width: 30px;
+    height: 30px;
+    margin-right: 40px;
+}
+
+/*imagenes del direction*/
+
+.image-direction1{
+    height: 60px;
+    width: 60px;
+
+}
+.image-direction2{
+    height: 60px;
+    width: 60px;
+
+}
+.image-direction3{
+    height: 60px;
+    width: 60px;
+
+}
+
+
+/*Contenedor del cuerpo*/
+
+.container-body{
+
+    width: auto;
+    height: 550px;
+    display: flex;
+    justify-content: space-between;
+    background-color: blueviolet;
+
+}
+
+.body-text{
+    width: 1199px;
+    height:00px ;
+    display:flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    
+
+
+    
+}
+
+.text1{
+    
+    height: 500px;
+    width: 600px;
+    background-color: beige;
+    
+
+}
+.text2{
+    
+    height: 500px;
+    width: 500px;
+    background-color: beige;
+
+}
+aside{
+    
+    width: 400px;
+    height:500px;
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-right: 20px; 
+    background-color: beige;
+    
+}
+/*texto del cuerpo y aside*/
+.body_lorem1{
+    
+    width: 600px;
+    height: auto;
+    font-size: 200%;
+
+}
+.body_lorem2{
+    
+    width: 500px;
+    height: auto;
+    font-size: 183%;
+
+}
+.aside_lorem{
+    
+    width: 320px;
+    height: auto;
+    font-size: 153%;
+
+}
+
+/*Partes del footer*/
+
+.container-footer{
+
+   background-color: aqua;
+    width: auto;
+    height: 200px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-browser{
+   
+    width: 400px;
+    height: 170px;
+    margin-top: 10px;
+    margin-left: 15px;
+   
+
+}
+.footer-images{
+   
+    width: 400px;
+    height: 170px;
+    margin-top: 10px;
+    margin-left: 15px;
+    display: inline-table;
+
+}
+.footer-text{
+    
+    width: 400px;
+    height: 170px;
+    margin-top: 10px;
+    margin-left: 15px;
+    
+
+}
+
+/*dentro del container footer-images*/
+
+.footer-images1{
+    
+    width: 47px;
+    height: 47px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 100px;
+
+
+}
+.footer-images2{
+    
+    width: 47px;
+    height: 47px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 100px;
+
+}
+.footer-images3{
+    
+    width: 47px;
+    height: 47px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 100px;
+
+}
+
+/*Dentro del contenedor de footer-text*/
+
+.p1-footer{
+    margin-top: 15px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+
+}
+.p2-footer{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+
+}
+.p3-footer{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+
+}
+/*Dentro de footer-images*/
+.browser1{
+    
+    margin-top: 25px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    
+
+}
+.browser2{
+    
+    margin-top: 20px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+
+}
+.browser3{
+    
+    margin-top: 20px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    
+}
+
+a{
+    margin-top: 60px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+
+}
+
+
+  
+  }
+  

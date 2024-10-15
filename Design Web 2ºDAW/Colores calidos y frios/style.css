@@ -1,0 +1,135 @@
+.header{
+
+    border:1px solid black;
+    background-color: grey;
+    width: auto;
+    height:auto;
+    
+    
+   
+    
+}
+
+
+
+nav{
+    display:flex;
+    justify-content: space-between;
+}
+
+
+
+.logo{
+    width: 140px;
+    height: 140px;
+    align-content: left;
+    
+}
+.name{
+    
+   
+    width:auto;
+    height: auto;
+    text-align: right;
+    
+    
+}
+.lastname{
+
+    font-size: 45px;
+    text-align:right;
+    font-family: "Sofadi One", system-ui;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+  .beginning-box{
+
+    padding-top:35px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+.end-box{
+    
+    padding-top:35px;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+.beginning{
+    font-size: 30px;
+}
+.end{
+    font-size: 30px;
+}
+
+    
+
+.containerlogo{
+    width: 150px;
+}
+
+/*Conteneder de colores frios y calidos*/
+.container-colours{
+    display: flex;
+    justify-content: space-between;
+
+}
+.color1{
+    border:1px solid black;
+    width: 500px;
+    height: 400px;
+    background: rgb(131,58,180);
+    background: linear-gradient(175deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 0%, rgba(252,238,69,1) 100%);
+    padding-left: 260px;
+    padding-top:40px;
+}
+.color2{
+    border:1px solid black;
+    width: 500px;
+    height: 400px;
+    padding-left: 260px;
+    padding-top:40px;
+    background: rgb(62,0,244);
+background: linear-gradient(180deg, rgba(62,0,244,1) 0%, rgba(242,8,102,1) 100%);
+
+    
+
+
+}
+
+/* Parte de colores calidos*/
+
+.color-text{
+    color:red;
+
+}
+.color1-text{
+    color:#fcee45 ;
+    
+}
+.color2-text{
+    color:orange;
+}
+.color3-text{
+    color:orangered
+}
+
+/* Parte de los colores Frios*/
+
+    .color2-text{
+        color:plum;
+    }
+    .color1-text2{
+        color:blueviolet;
+    }
+    .color2-text2{
+        color:blue;
+    }
+    .color3-text2{
+        color:pink;
+    }
+
+
+
+
+

@@ -1,0 +1,60 @@
+div{
+    border:1px solid black;
+}
+/* .grid{
+    display:grid;
+    grid-template-columns: 1fr 1fr ;
+    grid-template-rows: 2fr 1fr;
+} */
+
+/* .grid{
+    display:grid;
+    grid-template-columns: 100px repeat(4,50px) 200px;
+    grid-template-rows: repeat(2,1fr 2fr);
+} */
+
+/* .grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(400px, 600px));
+    grid-template-rows: repeat(2, 1fr);
+    gap: 5px;
+  }
+  
+  .item {
+    background: black;
+    color: white;
+    padding: 1em;
+  }
+   */
+
+   /*auto-fill y auto-fit
+   auto-fill: Crea tantas columnas/filas como sea posible, incluso si están vacías.
+auto-fit: Crea columnas/filas solo para los elementos necesarios, colapsando espacios
+ vacíos y expandiendo el contenido existente.*/
+    /* .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 50px));
+    background: grey;
+    gap: 10px;
+  }
+  
+  .item {
+    background: blue;
+    color: #fff;
+    font-size: 2rem;
+  } */ 
+
+  /*ATAJO DE GRID TEMPLATE*/
+
+.grid{
+    display: grid;
+    grid-template: 100px 100px / repeat(auto-fill,minmax(300px , 50px));/*poner coma en minmax entre valores*/
+    background: grey;
+    gap: 10px;
+}
+  .item {
+    background: blue;
+    color: #fff;
+    font-size: 2rem;
+   
+  } 
