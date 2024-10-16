@@ -33,7 +33,7 @@ html, body {
     }
         .container-hijas1 p{
             grid-row:2/-2;
-            margin-left: 45px;
+            margin-left: 60px;
             margin-top:25px;
         }
     .container-hijas2{
@@ -43,24 +43,36 @@ html, body {
     }
         .texto2-1{
             grid-row:3 / -2;
-            margin-left: 50px;
+            margin-left: 70px;
         }
         .texto2{
-            margin-left:65px
+            margin-left:80px
         }
     .container-hijas3{
         display: grid;
         grid-template-rows: 1fr 3fr 1fr;
+    
         grid-area:hija3 ;
     }
         .texto3{
-
+            margin-left:80px;
+        }
+        .texto3-2{
+            margin-left:70px;
         }
 
     .container-hijas4{
+        display: grid;
+       
+        grid-template-rows: 1fr 1fr 1fr;
         
         grid-area:hija4 ;
     }
+        .container-hijas4 p{
+            margin-left:20vh;
+            
+        }
+        
     .container-hijas5{
         
         grid-area:hija5 ;
