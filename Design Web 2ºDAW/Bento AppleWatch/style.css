@@ -1,0 +1,171 @@
+html,body{
+    height: 100%;
+    width: 100%;
+    background: whitesmoke;
+}
+
+.padre{
+  
+    width: 100%;
+    height: 100%;
+    
+    display:grid;
+    grid-template-columns: 1fr 0.5fr 0.4fr 0.4fr 0.7fr 0.6fr 0.4fr repeat(2, 1fr);
+
+    grid-template-rows: 0.8fr 70px 70px 100px 150px 150px ;
+    grid-template-areas:"hijas1 hijas1 hijas1 hijas2 hijas2 hijas3 hijas3 hijas4 hijas4"
+                        "hijas1 hijas1 hijas1 hijas5 hijas5 hijas5 hijas5 hijas4 hijas4"
+                        "hijas7 hijas8 hijas8 hijas5 hijas5 hijas5 hijas5 hijas4 hijas4"
+                        "hijas7 hijas8 hijas8 hijas5 hijas5 hijas5 hijas5 hijas9 hijas10"
+                        "hijas11 hijas11 hijas11 hijas5 hijas5 hijas5 hijas5 hijas12 hijas12 "
+                        "hijas13 hijas13 hijas14 hijas15 hijas16 hijas16 hijas17 hijas18 hijas18";
+    row-gap: 7px;
+    column-gap: 7px;
+   
+
+}
+    .padre div{
+        background: gray;
+        border-radius: 32px;
+    }
+        .hijas1{
+
+            grid-area:hijas1;
+        }
+            .hijas1 img{
+                width: 100%;
+                height: 100%;
+                border-radius: 30px;
+            }
+        .hijas2{
+            grid-area:hijas2;
+        }
+            .hijas2 img{
+                width: 100%;
+                height: 100%;
+                border-radius: 30px;
+            }
+        .hijas3{
+            grid-area:hijas3;
+        }
+            .hijas3 img{
+                width: 100%;
+                height: 100%;
+                border-radius: 30px;
+            }
+        .hijas4{
+            grid-area:hijas4;
+        }
+            .hijas4 img{
+                width: 100%;
+                height: 100%;
+                border-radius: 30px;
+            }
+        .hijas5{
+            grid-area:hijas5;
+          
+        }
+            .hijas5 img{
+                width: 100%;
+                height: 100%;
+                border-radius: 30px;
+            }
+       
+        .hijas7{
+            grid-area:hijas7;
+        }
+            .hijas7 img{
+                width: 100%;
+                height: 100%;
+                border-radius: 30px;
+            }
+           
+        .hijas8{
+            grid-area:hijas8;
+        }
+            .hijas8 img{
+                width: 100%;
+                height: 100%;
+                border-radius: 30px;
+            }
+        .hijas9{
+            grid-area:hijas9;
+        }
+            .hijas9 img{
+                width: 100%;
+                height: 100%;
+                border-radius: 30px;
+            }
+        .hijas10{
+            grid-area:hijas10;
+        }
+            .hijas10 img{
+                width: 100%;
+                height: 100%;
+                border-radius: 30px;
+            }
+        .hijas11{
+            grid-area:hijas11;
+            }.hijas11 img{
+                width: 100%;
+                height: 100%;
+                border-radius: 30px;
+            }
+        .hijas12{
+             grid-area:hijas12;
+        }
+            .hijas12 img{
+                width: 100%;
+                height: 100%;
+                border-radius: 30px;
+            }
+        .hijas13{
+             grid-area:hijas13;
+        }
+            .hijas13 img{
+                width: 100%;
+                height: 100%;
+                border-radius: 30px;
+            }
+        .hijas14{
+             grid-area:hijas14;
+        }
+            .hijas14 img{
+                width: 100%;
+                height: 100%;
+                border-radius: 30px;
+            }
+        .hijas15{
+             grid-area:hijas15;
+        }
+            .hijas15 img{
+                width: 100%;
+                height: 100%;
+                border-radius: 30px;
+            }
+        .hijas16{
+             grid-area:hijas16;
+        }
+            .hijas16 img{
+                width: 100%;
+                height: 100%;
+                border-radius: 30px; 
+            }
+        .hijas17{
+             grid-area:hijas17;
+        }
+            .hijas17 img{
+                width: 100%;
+                height: 100%;
+                border-radius: 30px;
+            }
+        .hijas18{
+            grid-area:hijas18;
+       }
+            .hijas18 img{
+                width: 100%;
+                height: 100%;
+                border-radius: 30px;
+            }
+      
+    
