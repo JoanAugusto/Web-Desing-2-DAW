@@ -3,6 +3,14 @@ html, body {
     margin: 0;
     padding: 0;
 }
+h1{
+    font-family: "Poppins", sans-serif;
+  font-weight: 550;
+  font-style: normal;
+}
+i{
+    color: white;
+}
 
 .container-padre{
     width: 100%;
@@ -35,7 +43,16 @@ html, body {
             grid-row:2/-2;
             margin-left: 60px;
             margin-top:25px;
+            font-size: 15px;
+            
+            color:white;
+            
         }
+            .container-hijas1 i{
+                font-size: 10vh;
+                align-content:center;
+                margin-left:75px;
+            }
     .container-hijas2{
         display: grid;
         grid-template-rows: 1fr 3fr 1fr;
@@ -48,6 +65,9 @@ html, body {
         .texto2{
             margin-left:80px
         }
+        .texto2-2{
+            margin-left:80px
+        }
     .container-hijas3{
         display: grid;
         grid-template-rows: 1fr 3fr 1fr;
@@ -55,6 +75,9 @@ html, body {
         grid-area:hija3 ;
     }
         .texto3{
+            margin-left:80px;
+        }
+        .texto3-1{
             margin-left:80px;
         }
         .texto3-2{
@@ -68,48 +91,145 @@ html, body {
         
         grid-area:hija4 ;
     }
-        .container-hijas4 p{
+        .texto4{
             margin-left:20vh;
             
         }
+        .texto4-1{
+            margin-left:20vh
+        }
+        .texto4-2{
+            margin-left:25vh;
+        }
+        
         
     .container-hijas5{
-        
+        display: grid;
+        grid-template-rows: 1fr 3fr 1fr;
         grid-area:hija5 ;
     }
+        .texto5{
+            margin-left: 27vh;
+        }
+        .texto5-1{
+            margin-left:24vh;
+        }
+        .texto5-2{
+            margin-left: 23vh;
+        }
     .container-hijas6{
-        
+        display:grid;
+        grid-template-rows: 1fr 1fr 1fr;
         grid-area:hija6 ;
     }
+        .container-hijas6 p{
+            margin-left:20vh;
+        }
+    
     .container-hijas7{
         
         grid-area:hija7 ;
+       
+        align-content: center;
+        
     }
+        .container-hijas7 img{
+            margin-left: 2vh;
+            border-radius: 8px;
+            width: 95%;
+            height: 95%;
+        }
     .container-hijas8{
-        
+        display:grid;
+        grid-template-rows: 3fr 1fr 1fr;
         grid-area: hija8;
+        align-items: center;
     }
-    .container-hijas9{
-        
-        grid-area: hija9;
-    }
-        .container-hijas10{
+        .container-hijas8 i{
+           margin-left:0;
+           font-size: 10vh;
             
+        }
+        .texto8{
+            margin-left:10vh;
+        }
+        .texto8-1{
+            margin-left:12vh;
+        }
+    .container-hijas9{
+        display:grid;
+        grid-template-rows: 3fr 1fr 1fr 1fr;
+        grid-area: hija9;
+        align-items: center;
+    }
+        .container-hijas9 i{
+            margin-left:10vh;
+            font-size: 10vh;
+            margin-top:2vh;
+        }
+        .texto9{
+            margin-left:12vh;
+        }
+        .texto9-1{
+            margin-left: 11vh;
+        }
+        .texto9-2{
+            margin-left: 12vh;
+        }
+        .container-hijas10{
+            display:grid;
+            grid-template-rows: 1fr 2fr 1fr;
             grid-area:hija10 ;
         }
+            .container-hijas10 p{
+                margin-left: 10vh;
+            }
         .container-hijas11{
-            
+            display:grid;
+            grid-template-rows: 1fr 1fr;
             grid-area: hija11;
         }
+            .texto11{
+                margin-left: 10vh;
+            }
+            .texto11-1{
+                margin-left: 8vh;
+            }
         .container-hijas12{
-            
+            display:grid;
+            grid-template-rows:1fr 1fr 1fr ;
             grid-area: hija12;
         }
+            .texto12{
+                margin-left:20vh;
+            }
+            .texto12-1{
+                margin-left:20vh;
+            }
+            .texto12-2{
+                margin-left:24vh;
+            }   
+
         .container-hijas13{
-            
+            display:grid;
+            grid-template-rows: 1fr 2fr;
             grid-area: hija13;
         }
+            .texto13{
+                margin-left: 35vh;
+            }
+            .texto13-1{
+                margin-left: 35vh;
+            }
         .container-hijas14{
+            display:grid;
+            grid-template-rows: 2fr 1fr;
             grid-area:hija14;
         }
+            .texto14{
+                margin-left: 22vh;    
+            }
+            .texto14-1{
+                margin-left: 20vh;  
+            }
       
