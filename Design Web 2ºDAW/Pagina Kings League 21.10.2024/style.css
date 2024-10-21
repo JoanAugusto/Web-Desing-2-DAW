@@ -1,0 +1,75 @@
+*{
+    margin:10px;
+    padding:10px;
+   
+}
+.body,html{
+    width:100% ;
+    height: 100%;
+    background: black;
+}
+
+.container-nav{
+    background:white;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+}
+    .nav{
+        height: 10vh;
+        background:red;
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-between;
+        
+    }
+        .logo{
+            background: orange;
+        }
+
+        .explore{
+            background: white;
+            display: flex;
+            flex-flow: row nowrap;
+            align-items: center;
+            
+        }
+            .world-section{
+                background: greenyellow;
+                
+                
+            }
+        .directions-section{
+            background: violet;
+            display: flex;
+            flex-flow: row nowrap;
+            align-items: center;
+        }
+            .direcc{
+                background: white;
+               
+            }
+
+        .explore2{
+            background: purple;
+            display: flex;
+            flex-flow: row nowrap;
+            align-items: center;
+            
+        }
+            .directions-page{
+                background: white;
+            
+            }
+                
+
+        .enlaces{
+            background: gold;
+            display: flex;
+            flex-flow: row nowrap;
+            align-items: center;
+        }
+            .monetizacion{
+                background: white;
+            }
+
+.section{}
