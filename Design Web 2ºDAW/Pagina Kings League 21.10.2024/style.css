@@ -1,6 +1,6 @@
 *{
-    margin:10px;
-    padding:10px;
+    margin:4px;
+    padding:4px;
    
 }
 .body,html{
@@ -8,11 +8,14 @@
     height: 100%;
     background: black;
 }
+a{
+    text-decoration: none;
+}
 
 .container-nav{
     background:white;
     display: grid;
-    grid-template-rows: 1fr 1fr;
+    
 }
     .nav{
         height: 10vh;
@@ -32,7 +35,15 @@
             flex-flow: row nowrap;
             align-items: center;
             
+            
         }
+            .explore a{
+                font-size:13px;
+                    text-transform: uppercase;
+                    padding:0 10px;
+                    letter-spacing: 2px;
+            }
+
             .world-section{
                 background: greenyellow;
                 
@@ -43,11 +54,18 @@
             display: flex;
             flex-flow: row nowrap;
             align-items: center;
+            width: auto;
+            margin-right:60vh;
         }
             .direcc{
                 background: white;
+                
                
             }
+                .direcc img{
+                    width: 5vh;
+                    height: 5vh;
+                }
 
         .explore2{
             background: purple;
@@ -56,6 +74,15 @@
             align-items: center;
             
         }
+            .explore2 a{
+                    font-size:15px;
+                    text-transform: uppercase;
+                    padding:0 10px;
+                    letter-spacing: 2px;
+            }
+            .explore2 a:hover{
+                color:red
+            }
             .directions-page{
                 background: white;
             
@@ -67,9 +94,221 @@
             display: flex;
             flex-flow: row nowrap;
             align-items: center;
+           
         }
             .monetizacion{
                 background: white;
+                
             }
 
-.section{}
+.container{
+    background: white;
+    height: auto;
+    display:flex;
+   justify-content: space-between ;
+
+}
+    .clasificacion{
+        background: green;
+        width: 50vh;
+        height: 200vh;
+        
+    }
+        .texto{
+            background: red;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr;
+
+        }
+            .texto1{
+                background: white;
+            }
+            .texto2{
+                background: white;
+            }
+        .equipos{
+            background: red;
+            height: auto;
+        }
+                .orden1{
+                    background: white;
+                    display: grid;
+                    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 0.6fr 0.6fr 0.6fr;
+                    grid-template-areas: "pos equipo equipo equipo equipo pts pj dg";
+                }
+                    .pos{
+                        background: blue;
+                        grid-area: pos;
+                    }
+                        .pos p{
+                            font-size: 10px;
+                            
+                        }
+                    .equipo{
+                        background: blue;
+                        grid-area: equipo;  
+                    }
+                        .equipo p{
+                            font-size: 10px;
+                        }
+                    .pts{
+                        background: blue;
+                        grid-area: pts;
+                    }
+                        .pts p{
+                            font-size: 10px;
+                        }
+                    .pj{
+                        background: blue;
+                        grid-area: pj;
+                    }
+                        .pj{
+                            font-size: 10px;
+                        }
+                    .dg{
+                        background: blue;
+                        grid-area: dg;
+                    }
+                        .dg{
+                            font-size: 10px;
+                        }
+
+            .Mostoles{
+                background: white;
+               display:grid;
+               grid-template-columns: 0.2fr 1fr;
+              height: auto;
+
+            }
+            
+                .container-equipo{/*Engloba a todos los equipos*/
+                   display: grid;
+                   grid-template-columns: 0.6fr 1fr 1fr 1fr 1fr 1fr;
+                   grid-template-areas: "image nombre nombre puntos pjj dgg";
+                   column-gap: 5px;
+                }
+              
+                    .container-image{
+                        background: yellowgreen;
+                        grid-area: image;
+                    }
+                    .nombre-equipo{
+                        background: yellowgreen;
+                        grid-area: nombre;
+                    }
+                    .puntos{
+                        background: yellowgreen;
+                        grid-area: puntos;
+                    }
+                    .pjj{
+                        background: yellowgreen;
+                        grid-area: pjj;
+                    }
+                    .dgg{
+                        background: yellowgreen;
+                        grid-area: dgg;
+                    }
+                
+            .Porcinos{
+                background: white;
+                display:grid;
+                grid-template-columns: 0.2fr 1fr;
+               height: auto;
+            }
+            .Barrio{
+                background: white;
+                display:grid;
+                grid-template-columns: 0.2fr 1fr;
+               height: auto;
+            }
+            .Troncos{
+                background: white;
+                display:grid;
+                grid-template-columns: 0.2fr 1fr;
+               height: auto;
+            }
+            .the1k{
+                background: white;
+                display:grid;
+                grid-template-columns: 0.2fr 1fr;
+               height: auto;
+            }
+            .jijantes{
+                background: white;
+                display:grid;
+                grid-template-columns: 0.2fr 1fr;
+               height: auto;
+            }
+            .kuni{
+                background: white;
+                display:grid;
+                grid-template-columns: 0.2fr 1fr;
+               height: auto;
+            }
+            .Barcelona{
+                background: white;
+                display:grid;
+                grid-template-columns: 0.2fr 1fr;
+               height: auto;
+            }
+            .Saiyans{
+                background: white;
+                display:grid;
+                grid-template-columns: 0.2fr 1fr;
+               height: auto;
+            }
+            .Aniquiladores{
+                background: white;
+                display:grid;
+                grid-template-columns: 0.2fr 1fr;
+               height: auto;
+            }
+            .pio{
+                background: white;
+                display:grid;
+                grid-template-columns: 0.2fr 1fr;
+               height: auto;
+            }
+            .xbuyer{
+                background: white;
+                display:grid;
+                grid-template-columns: 0.2fr 1fr;
+               height: auto;
+            }
+                .playoff{
+                    background: white;
+                    display: grid;
+                    grid-template-columns: 1fr 1fr;
+                }
+                    .off{
+                        background: blue;
+                    }
+    .jugadores{
+        background: yellow;
+        width: 160vh;
+
+    }
+        .texto-jugadores{
+            background: red;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+        }
+            .texto3{
+                background: white; 
+            }
+            .texto4{
+                background: white;
+            }
+        .players{
+            background: red;
+            display:grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: 1fr 1fr ;
+        }
+        
+          
+        .players-pitch{
+          background: white;
+        
+        }
