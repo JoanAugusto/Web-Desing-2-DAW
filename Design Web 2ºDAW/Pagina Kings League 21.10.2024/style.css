@@ -13,27 +13,52 @@ a{
 }
 
 .container-nav{
-    background:white;
+   
     display: grid;
-    
+    width:auto;
 }
     .nav{
-        height: 10vh;
-        background:red;
+        height: 5vh;
+        background:white;
         display: flex;
         flex-flow: row nowrap;
         justify-content: space-between;
+        position: relative;
+        z-index: 1;
+        
         
     }
-        .logo{
-            background: orange;
+        .logo1{
+            
+            width: 7%;
+           
         }
+        .logo2{
+            border-radius: 12%;
+            
+            width: 7%;
+            position: absolute;
+            z-index: 2;
+            bottom:-4.5vh;
+
+            
+            
+        }
+            .logo2 img{
+                width: 16vh;
+                height:16vh ;
+               
+               
+                
+            }
 
         .explore{
-            background: white;
+          
             display: flex;
             flex-flow: row nowrap;
-            align-items: center;
+            
+            margin-right: 105vh;
+            
             
             
         }
@@ -44,271 +69,762 @@ a{
                     letter-spacing: 2px;
             }
 
-            .world-section{
-                background: greenyellow;
-                
-                
-            }
+           
         .directions-section{
-            background: violet;
+          
             display: flex;
             flex-flow: row nowrap;
             align-items: center;
             width: auto;
-            margin-right:60vh;
+            margin-right:0vh;
         }
-            .direcc{
-                background: white;
-                
-               
-            }
+          
                 .direcc img{
                     width: 5vh;
                     height: 5vh;
                 }
-
+    .nav2{
+        height:5vh;
+       
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-between;
+        position: relative;
+        z-index: 1;
+        background: black; 
+    }
         .explore2{
-            background: purple;
+           
             display: flex;
             flex-flow: row nowrap;
             align-items: center;
+            margin-left: 20vh;
+            
+           
             
         }
             .explore2 a{
-                    font-size:15px;
+                    font-size: 0.875rem;
                     text-transform: uppercase;
                     padding:0 10px;
                     letter-spacing: 2px;
+                    color: white;
             }
             .explore2 a:hover{
                 color:red
             }
-            .directions-page{
-                background: white;
             
-            }
                 
 
         .enlaces{
-            background: gold;
+           
             display: flex;
             flex-flow: row nowrap;
             align-items: center;
+            color: aliceblue;
+
            
         }
             .monetizacion{
-                background: white;
+              
+               border-radius: 9%;
+                display:grid;
+                grid-template-columns: 0.7fr 1fr;
+                height: auto;
+                width:auto ;
+                border: 1px solid rgb(28 28 28);
+                border-radius: 2vh;
+                background:rgb(28 28 28) ;
                 
             }
+              .twitch{
+                height: auto;
+              }
+                .twitch img{
+                   
+                    height:1.3vh ;
+                    width: 1.3vh;
+                    color: white;
+                }
+                .monetizacion2{
+                    background:rgb(28 28 28) ;
+                    border-radius: 9%;
+                     display:grid;
+                     grid-template-columns: 0.7fr 1fr;
+                     height: auto;
+                     width:auto ;
+                     
+                 }
+              .entrada{
+                height: auto;
+              }
+                .entrada svg{
+                  
+                    height:1.3vh ;
+                    width: 1.3vh;
+                }
+                .monetizacion3{
+                    background: orange;
+                    border-radius: 9%;
+                     display:grid;
+                     grid-template-columns: 0.7fr 1fr;
+                     height: auto;
+                     width:auto ;
+                     
+                 }
+              .tienda{
+                height: auto;
+               
+              }
+                .tienda p{
+                    color: black;
+                }
+                .tienda svg{
+                   
+                    height:1.3vh ;
+                    width: 1.3vh;
+                }
 
 .container{
-    background: white;
-    height: auto;
+    background: black;
     display:flex;
    justify-content: space-between ;
+   padding:1% 2% 0 2%;
+   border: 1px solid gray;
 
 }
     .clasificacion{
-        background: green;
-        width: 50vh;
-        height: 200vh;
+        background: rgb(20 20 20 );
+        width: auto;
+        height: auto;
+        border-radius: 10px;
         
     }
+        
+      
         .texto{
-            background: red;
+           
             display: grid;
             grid-template-columns: 1fr 1fr;
-            grid-template-rows: 1fr;
+            grid-template-rows: 1fr ;
 
         }
-            .texto1{
-                background: white;
-            }
+            
+            
+                .texto1 p{
+                    color: white;
+                    text-transform: uppercase;
+                    letter-spacing: 1px;
+                }
             .texto2{
-                background: white;
+                
+                display: flex;
+                justify-content: right;
+                padding-top: 1vh;
             }
+                .texto2 a{
+                    font-size: 13px;
+                    color: orange;
+                }
         .equipos{
-            background: red;
+            
             height: auto;
         }
                 .orden1{
-                    background: white;
+                   
                     display: grid;
-                    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 0.6fr 0.6fr 0.6fr;
-                    grid-template-areas: "pos equipo equipo equipo equipo pts pj dg";
+                    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 0.6fr 0.6fr 0.6fr;
+                    grid-template-areas: "pos equipo equipo equipo equipo equipo equipo pts pj dg";
+                    column-gap: 0.6vh;
+
+                
                 }
                     .pos{
-                        background: blue;
+                       
                         grid-area: pos;
+                        
+                   
+                        
+                        
                     }
                         .pos p{
-                            font-size: 10px;
+                            font-size: 8px;
+                            color: white;
                             
                         }
                     .equipo{
-                        background: blue;
+                       
                         grid-area: equipo;  
                     }
                         .equipo p{
-                            font-size: 10px;
+                            font-size: 8px;
+                            color: white;
                         }
                     .pts{
-                        background: blue;
+                       
                         grid-area: pts;
                     }
                         .pts p{
-                            font-size: 10px;
+                            font-size: 8px;
+                            color: white;
                         }
                     .pj{
-                        background: blue;
+                       
                         grid-area: pj;
                     }
-                        .pj{
-                            font-size: 10px;
+                        .pj p{
+                            font-size: 8px;
+                            color: white;
                         }
                     .dg{
-                        background: blue;
+                        
                         grid-area: dg;
                     }
                         .dg{
                             font-size: 10px;
+                            color: white;
                         }
+            
 
+
+                             
             .Mostoles{
-                background: white;
+               
                display:grid;
-               grid-template-columns: 0.2fr 1fr;
+               grid-template-columns: 0.1fr 1fr;
               height: auto;
 
             }
+            .posi-equipo{
+                display: grid;
+                grid-template-columns: 0.1fr 1fr;
+                
+               
+              }      
+                .color{
+                    background: green;
+                    height: 8vh;
+                   
+                }
+                .number{
+                    align-content: center;
+                    color: white;
+                }
             
                 .container-equipo{/*Engloba a todos los equipos*/
                    display: grid;
-                   grid-template-columns: 0.6fr 1fr 1fr 1fr 1fr 1fr;
-                   grid-template-areas: "image nombre nombre puntos pjj dgg";
-                   column-gap: 5px;
+                   grid-template-columns: 0.6fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+                   grid-template-areas: "image nombre nombre nombre nombre puntos pjj dgg";
+                   
+                   align-content: center;
+                   border-radius: 6px;
+                   background: rgb(21, 30, 30);
                 }
               
                     .container-image{
-                        background: yellowgreen;
+                        width: 4vh;
                         grid-area: image;
+                        display: flex;
+                        align-content:flex-start;
+                       
                     }
+                        .container-image img{
+                            width: 5vh;
+                            
+                        }
                     .nombre-equipo{
-                        background: yellowgreen;
+                        
                         grid-area: nombre;
+                        align-content: center;
                     }
+                        .nombre-equipo p{
+                            color: white;
+                            letter-spacing: 1px;
+                            font-weight: bold;
+                        }
                     .puntos{
-                        background: yellowgreen;
+                        
                         grid-area: puntos;
+                        align-content: center;
+                       
                     }
+                        .puntos p{
+                            color: white;
+                            font-weight: bold;
+                        }
                     .pjj{
-                        background: yellowgreen;
+                        
                         grid-area: pjj;
+                        align-content: center;
                     }
+                        .pjj p{
+                            color: white;
+                            font-weight: bold;
+                        }
                     .dgg{
-                        background: yellowgreen;
+                        
                         grid-area: dgg;
+                        align-content: center;
                     }
+                        .dgg p{
+                            color: white;
+                            font-weight: bold;
+                        }
                 
             .Porcinos{
-                background: white;
+              
                 display:grid;
-                grid-template-columns: 0.2fr 1fr;
+                grid-template-columns: 0.1fr 1fr;
                height: auto;
             }
+            
+              
+                .color2{
+                    background: yellow;
+                    height: 8vh;
+                }
+            
+                .number2{
+                    align-content: center;
+                   color: white;
+                }
+                    
             .Barrio{
-                background: white;
+               
                 display:grid;
-                grid-template-columns: 0.2fr 1fr;
+                grid-template-columns: 0.1fr 1fr;
                height: auto;
             }
+                .color3{
+                    background: yellow;
+                    height: 8vh;
+                }
+                .number3{
+                    align-content: center;
+                    color: white;
+                }
             .Troncos{
-                background: white;
+               
                 display:grid;
-                grid-template-columns: 0.2fr 1fr;
+                grid-template-columns: 0.1fr 1fr;
                height: auto;
             }
+                .color4{
+                    background: yellow;
+                    height: 8vh;
+                }
+                .number4{
+                    align-content: center;
+                    color: white;
+                }
             .the1k{
-                background: white;
+               
                 display:grid;
-                grid-template-columns: 0.2fr 1fr;
+                grid-template-columns: 0.1fr 1fr;
                height: auto;
             }
+                .color5{
+                    background: yellow;
+                    height: 8vh;
+                }
+                .number5{
+                    align-content: center;
+                    color: white;
+                }
             .jijantes{
-                background: white;
+               
                 display:grid;
-                grid-template-columns: 0.2fr 1fr;
+                grid-template-columns: 0.1fr 1fr;
                height: auto;
             }
+                .color6{
+                    background: yellow;
+                    height: 8vh;
+                }
+                .number6{
+                    align-content: center;
+                    color: white;
+                }
             .kuni{
-                background: white;
+               
                 display:grid;
-                grid-template-columns: 0.2fr 1fr;
+                grid-template-columns: 0.1fr 1fr;
                height: auto;
             }
+                .color7{
+                    background: yellow;
+                    height: 8vh;
+                }
+                .number7{
+                    align-content: center;
+                    color: white;
+                }
             .Barcelona{
-                background: white;
+               
                 display:grid;
-                grid-template-columns: 0.2fr 1fr;
+                grid-template-columns: 0.1fr 1fr;
                height: auto;
             }
+                .color8{
+                    height: 8vh;
+                }
+                .number8{
+                    align-content: center;
+                    color: white;
+                }
             .Saiyans{
-                background: white;
+               
                 display:grid;
-                grid-template-columns: 0.2fr 1fr;
+                grid-template-columns: 0.1fr 1fr;
                height: auto;
             }
+                .color9{
+                    height: 8vh;
+                }
+                .number9{
+                    align-content: center;
+                    color: white;
+                }
             .Aniquiladores{
-                background: white;
+               
                 display:grid;
-                grid-template-columns: 0.2fr 1fr;
+                grid-template-columns: 0.1fr 1fr;
                height: auto;
             }
+                .colo10{
+                    height: 8vh;
+                }
+                .number10{
+                    align-content: center;
+                    color: white;
+                }
             .pio{
-                background: white;
+               
                 display:grid;
-                grid-template-columns: 0.2fr 1fr;
+                grid-template-columns: 0.1fr 1fr;
                height: auto;
             }
+                .color11{
+                    height: 8vh;
+                }
+                .number11{
+                    align-content: center;
+                    color: white;
+                }
             .xbuyer{
-                background: white;
+               
                 display:grid;
-                grid-template-columns: 0.2fr 1fr;
+                grid-template-columns: 0.1fr 1fr;
                height: auto;
             }
+                .color12 {
+                    height: 8vh;
+                }
+                .number12{
+                    align-content: center;
+                    color: white;
+                }
                 .playoff{
-                    background: white;
+                    
                     display: grid;
                     grid-template-columns: 1fr 1fr;
+                    margin-left: 10vh;
+                    
                 }
-                    .off{
-                        background: blue;
+                    .off1{
+                        display: grid;
+                        grid-template-columns: 0.1fr 1fr;
+                       
                     }
+                        .bandaVerde{
+                            background: green;
+                            
+                        }
+                        .Semi{
+                            font-size: 2vh;
+                            color: gray;
+                        }
+                    .off2{
+                        display: grid;
+                        grid-template-columns: 0.1fr 1fr;
+                       
+                    }
+                        .bandaAmarilla{
+                            background: yellow;
+                        }
+                        .Cuartos{
+                            font-size: 2vh;
+                            color: gray;
+                        }
     .jugadores{
-        background: yellow;
+        background: rgb(20 20 20 );
         width: 160vh;
+        border-radius: 10px;
+       
+        
 
     }
         .texto-jugadores{
-            background: red;
+            
             display: grid;
             grid-template-columns: 1fr 1fr;
         }
             .texto3{
-                background: white; 
+               
+                display: flex;
+               justify-content: start;
             }
+                .texto3 p{
+                    text-transform: uppercase;
+                    letter-spacing: 1px;
+                    color:white ;
+                }
             .texto4{
-                background: white;
+                
+                display: flex;
+                justify-content: end;
+                padding-top:1vh;
             }
+                .texto4 a{
+                    font-size: 13px;
+                    color: orange;
+                }
         .players{
-            background: red;
+           
             display:grid;
             grid-template-columns: 1fr 1fr 1fr;
             grid-template-rows: 1fr 1fr ;
+           
         }
         
           
-        .players-pitch{
-          background: white;
+            .players-pitch{
+               
+           
+            
+            }
+            .imgfix{
+                width: 92.4%;
+            }
+             .foto{
+                z-index: 1;
+                position: relative;
+                
+               
+             }
+             .gif{
+                z-index: 1;
+                position: relative;
+                width: 100%;
+             }
+                .image1{
+                    z-index: 2;
+                    position: absolute;
+                   
+                }
+               
+                .descripcion{
+                   
+                }
+                    .detalles{
+                        display: grid;
+                        grid-template-columns: 1fr 1fr;
+                    }
+                        .detalle1{
+                            font-size: 10px;
+                            color: gray;
+                        }
+                        .detallesMVP{
+                            display: flex;
+                            justify-content: end;
+                            font-size: 10px;
+                            color: gray;
+                        }
+                    .detalles2{
+                        display: grid;
+                        grid-template-columns: 5fr 2fr 1fr;
+                        
+                    }
+                        .detalle2{
+                            font-size: 10px;
+                            color: gray;
+                        }
+                        .nombre2{
+                          display: grid; 
+                          grid-template-columns:5fr 2fr 1fr; 
+                          background:rgb(28 28 28) ;;
+                          color: white;
+                          
+                        }
+                           
+                
+                    .detalles3{
+                        display: grid;
+                        grid-template-columns: 5fr 2fr 1fr;
+                    }
+                        .detalle3 {
+                            font-size: 10px;
+                            color: gray;
+                        }
+                        .nombre3{
+                            display: grid; 
+                            grid-template-columns:5fr 2fr 1fr;
+                            background:rgb(28 28 28) ;
+                            color: white;
+                        }
+                
+                
+                    .detalles4{
+                        display: grid;
+                        grid-template-columns: 5fr 2fr 1fr;  
+                        color: gray;
+                    }
+                        .nombre4{
+                            display: grid; 
+                            grid-template-columns:5fr 2fr 1fr;   
+                            background:rgb(28 28 28) ;
+                            color: white;
+                        }
+
+
+                    .detalles5{
+                        display: grid;
+                        grid-template-columns: 3fr 3fr 0.7fr 0.7fr;  
+                         
+                    }
+                        .detalle5{
+                            background: yellow;
+                            color: gray;
+                        }
+                        .detalle51{
+                            background: red;
+                            color: gray;
+                        }
+                        .nombre5{
+                            display: grid; 
+                            grid-template-columns:3fr 1fr 0.7fr 0.7fr;  
+                            background:rgb(28 28 28) ;
+                            color: white;
+                              
+                        }
+                       
+                        .nombre{
+                        display: grid;
+                        grid-template-columns: 4fr 0.7fr;
+                        background:rgb(28 28 28) ;
+                        color: white;
+                    }
+                   
+                    .foto-equipo{
+                        
+                        width: 10vh;
+                    }
+                        .foto-equipo img{
+                            width: 10vh;
+                            height: 10vh;
+                        }
+                .vermas{
+                    display: flex;
+                    justify-content: center;
+                    color: gray;
+
+                }
+                    .vermas a{
+                        font-size: 12px;
+                    }
+            .entradas{
+               
+                z-index: 1;
+                position: relative;
+                
+               
+               
+                
         
-        }
+            }
+                .img-entrada{
+                    width: 100%;
+                    height: 100%;
+                    z-index: 1;
+                    position: relative;
+                  
+                }
+                .boton{
+                    z-index: 2;
+                    position:absolute;
+                    left: 7.5vh;
+                    bottom: 3vh;
+                    width: 30vh;
+                  border-radius: 10px;
+                  background: white;
+                }
+                    .boton p{
+                        color: black;
+                    }
+                
+            
+
+
+/*Responsive probelmas con el nav se mueven mucho los enlaces fallo mio.*/
+@media all and (max-width:1880px){
+    .explore{
+        margin-right: 133vh;
+    }
+}
+@media all and (max-width:1852px){
+    .explore{
+        margin-right:120vh;
+    }
+    .explore2{
+        margin-left: 25vh;
+    }
+}
+@media all and (max-width:1830px){
+    .explore2{
+        margin-left: 22vh;
+    }
+}
+@media all and (max-width:1780px){
+    .explore2{
+        margin-left: 20vh;
+    }
+}
+@media all and (max-width:1756px){
+    .explore2{
+        margin-left: 18vh;
+    }
+}
+@media all and (max-width:1742px){
+    .explore{
+        margin-right: 100vh;
+    }
+    .explore2{
+        margin-left: 28vh;
+    }
+}
+@media all and (max-width:1700px){
+    .explore2{
+        margin-left: 24vh;
+    }
+}
+@media all and (max-width:1630px){
+    .explore2{
+        margin-left: 20vh;
+    }
+}
+@media all and (max-width:1573px){
+    .explore{
+        margin-right: 90vh;
+    }
+    .explore2{
+        margin-left: 20vh;
+    }
+}
+@media all and (max-width:1489px){
+    .explore{
+        margin-right: 85vh;
+    }
+    .explore2{
+        margin-left: 17vh;
+    }
+}
