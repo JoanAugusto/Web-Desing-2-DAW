@@ -1,0 +1,70 @@
+html,body{
+    width: 99%;
+    height: 100%;
+    background: white;
+   
+    
+}
+body{
+    display:grid;
+    grid-template-columns: 1fr 0.4fr 1fr 3fr 0.4fr;
+    grid-template-rows: 0.4fr 1fr 1fr 1fr 0.4fr;
+    margin:0px;
+
+}
+    .mujerRojo1{
+        background: red;
+        
+        grid-row-start:1 ;
+        grid-row-end: 6;
+    }
+    .mujerRojo2{
+        background: red;
+    }
+    .mujerRojo3{
+        background: red;
+        grid-row-start:5 ;
+        grid-row-end:6;
+    }
+    .text-imagen{
+        background: grey;
+        grid-row-start: 2;
+        grid-row-end: 5;
+
+        grid-column-start: 2;
+        grid-column-end:5 ;
+        display: grid;
+        grid-template-columns: minmax(auto,0.5fr) 0.8fr ;
+        column-gap:18vh ;
+    }
+        .container-image{
+            background:url(./images/mujer_vino.jpg);
+            background-position: center;
+            background-size: cover;
+        }
+        .texto{
+            background-color: aquamarine;
+            display: grid;
+            grid-template-rows:  0.2fr 0.4fr ;
+        }
+            .section{
+                display: grid;
+                grid-template-rows: minmax(auto ,1fr) minmax(auto ,1fr) ;
+            }
+                .parrafo{
+                    font-size: 2.2vh;
+                }
+                .sectio-boton{
+                    display: grid;
+                    grid-template-rows: minmax(auto,0.5fr) minmax(auto,1fr);
+                    font-size: 2.2vh;
+                }
+            .boton{
+            height: 7vh;
+            width: 23vh;
+            border-radius: 1vh;
+            color:white;
+            background: red;
+            margin-bottom: 6vh;
+            }
+   

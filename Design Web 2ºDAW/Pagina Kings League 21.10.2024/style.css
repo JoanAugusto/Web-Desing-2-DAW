@@ -39,7 +39,7 @@ a{
             width: 7%;
             position: absolute;
             z-index: 2;
-            bottom:-4.5vh;
+            bottom:-7vh;
 
             
             
@@ -57,12 +57,13 @@ a{
             display: flex;
             flex-flow: row nowrap;
             
-            margin-right: 105vh;
+            margin-right: 100vh;
             
             
             
         }
             .explore a{
+                color: black;
                 font-size:13px;
                     text-transform: uppercase;
                     padding:0 10px;
@@ -78,13 +79,17 @@ a{
             width: auto;
             margin-right:0vh;
         }
-          
+            .idiomas select{
+                border:none;
+                outline:border;
+            }
+               
                 .direcc img{
                     width: 5vh;
                     height: 5vh;
                 }
     .nav2{
-        height:5vh;
+        height:1vh;
        
         display: flex;
         flex-flow: row nowrap;
@@ -93,6 +98,7 @@ a{
         z-index: 1;
         background: black; 
     }
+        
         .explore2{
            
             display: flex;
@@ -122,6 +128,7 @@ a{
             flex-flow: row nowrap;
             align-items: center;
             color: aliceblue;
+           
 
            
         }
@@ -135,6 +142,7 @@ a{
                 border: 1px solid rgb(28 28 28);
                 border-radius: 2vh;
                 background:rgb(28 28 28) ;
+                margin-top: 2.5vh;
                 
             }
               .twitch{
@@ -153,6 +161,8 @@ a{
                      grid-template-columns: 0.7fr 1fr;
                      height: auto;
                      width:auto ;
+                     margin-top: 2.5vh;
+                
                      
                  }
               .entrada{
@@ -170,6 +180,8 @@ a{
                      grid-template-columns: 0.7fr 1fr;
                      height: auto;
                      width:auto ;
+                     margin-top: 2.5vh;
+                
                      
                  }
               .tienda{
@@ -189,9 +201,8 @@ a{
     background: black;
     display:flex;
    justify-content: space-between ;
-   padding:1% 2% 0 2%;
-   border: 1px solid gray;
-
+   padding:3% 2% 0 2%;
+   
 }
     .clasificacion{
         background: rgb(20 20 20 );
@@ -616,16 +627,23 @@ a{
                 z-index: 1;
                 position: relative;
                 width: 100%;
+                
              }
+                .gif:hover{
+                    opacity: 0;
+                }
                 .image1{
                     z-index: 2;
                     position: absolute;
-                   
+                
                 }
                
                 .descripcion{
                    
                 }
+                    .original-nombre{
+                        height: 7vh;
+                    }
                     .detalles{
                         display: grid;
                         grid-template-columns: 1fr 1fr;
@@ -654,7 +672,8 @@ a{
                           grid-template-columns:5fr 2fr 1fr; 
                           background:rgb(28 28 28) ;;
                           color: white;
-                          
+                          border-radius: 10px;
+                          height: 9vh;
                         }
                            
                 
@@ -671,6 +690,8 @@ a{
                             grid-template-columns:5fr 2fr 1fr;
                             background:rgb(28 28 28) ;
                             color: white;
+                            border-radius: 10px;
+                            height: 9vh;
                         }
                 
                 
@@ -684,13 +705,15 @@ a{
                             grid-template-columns:5fr 2fr 1fr;   
                             background:rgb(28 28 28) ;
                             color: white;
+                            border-radius: 10px;
+                            height: 9vh;
                         }
 
 
                     .detalles5{
                         display: grid;
                         grid-template-columns: 3fr 3fr 0.7fr 0.7fr;  
-                         
+                        border-radius: 10px;
                     }
                         .detalle5{
                             background: yellow;
@@ -705,6 +728,8 @@ a{
                             grid-template-columns:3fr 1fr 0.7fr 0.7fr;  
                             background:rgb(28 28 28) ;
                             color: white;
+                            border-radius: 10px;
+                            height: 9vh;
                               
                         }
                        
@@ -713,15 +738,21 @@ a{
                         grid-template-columns: 4fr 0.7fr;
                         background:rgb(28 28 28) ;
                         color: white;
+                        border-radius: 10px;
+                        height: 9vh;
                     }
                    
                     .foto-equipo{
                         
-                        width: 10vh;
+                        width: 7vh;
+                       
+                        
+                        
                     }
                         .foto-equipo img{
-                            width: 10vh;
-                            height: 10vh;
+                            width: 7vh;
+                            height: 7vh;
+                            
                         }
                 .vermas{
                     display: flex;
@@ -736,36 +767,47 @@ a{
                
                 z-index: 1;
                 position: relative;
-                
-               
-               
-                
         
             }
+                
                 .img-entrada{
                     width: 100%;
                     height: 100%;
                     z-index: 1;
                     position: relative;
+                    border-radius: 10px;
                   
                 }
                 .boton{
                     z-index: 2;
                     position:absolute;
                     left: 7.5vh;
-                    bottom: 3vh;
-                    width: 30vh;
-                  border-radius: 10px;
-                  background: white;
+                    bottom: 2vh;
+                    width: 32vh;
+                  border-radius: 9px;
+                  
                 }
+                    .boton:hover{
+                        background: black;
+                    }
+                   
                     .boton p{
                         color: black;
                     }
+                        .boton p:hover{
+                            color: white;
+                        }
                 
             
 
 
 /*Responsive probelmas con el nav se mueven mucho los enlaces fallo mio.*/
+@media all and (max-width:1920px){
+    .imgfix{
+        width: 93.5%;
+    } 
+
+}
 @media all and (max-width:1880px){
     .explore{
         margin-right: 133vh;
@@ -822,9 +864,9 @@ a{
 }
 @media all and (max-width:1489px){
     .explore{
-        margin-right: 85vh;
+        margin-right: 70vh;
     }
     .explore2{
-        margin-left: 17vh;
+        margin-left: 20vh;
     }
 }
