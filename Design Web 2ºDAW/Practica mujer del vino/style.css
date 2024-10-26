@@ -1,55 +1,101 @@
 html,body{
-    width: 99%;
-    height: 100%;
+    width: auto;
+    height: auto;
     background: white;
    
     
 }
+
 body{
     display:grid;
-    grid-template-columns: 1fr 0.4fr 1fr 3fr 0.4fr;
-    grid-template-rows: 0.4fr 1fr 1fr 1fr 0.4fr;
+    grid-template-columns: minmax(auto,1fr) minmax(auto,0.4fr) minmax(auto,1fr) minmax(auto,3fr) minmax(auto,0.4fr);
+    grid-template-rows: minmax(auto,0.4fr) minmax(auto,1fr) minmax(auto,1fr) minmax(auto,1fr) minmax(auto,0.4fr);
     margin:0px;
 
 }
     .mujerRojo1{
-        background: red;
+        background:rgb(179, 0, 0);
         
         grid-row-start:1 ;
         grid-row-end: 6;
     }
     .mujerRojo2{
-        background: red;
+        background:rgb(179, 0, 0);
     }
     .mujerRojo3{
-        background: red;
+        background:rgb(179, 0, 0);
         grid-row-start:5 ;
         grid-row-end:6;
     }
     .text-imagen{
-        background: grey;
+      
         grid-row-start: 2;
         grid-row-end: 5;
 
         grid-column-start: 2;
         grid-column-end:5 ;
         display: grid;
-        grid-template-columns: minmax(auto,0.5fr) 0.8fr ;
+        grid-template-columns: minmax(auto,0.5fr) minmax(auto,0.8fr) ;
         column-gap:18vh ;
+       
     }
         .container-image{
-            background:url(./images/mujer_vino.jpg);
-            background-position: center;
-            background-size: cover;
-        }
-        .texto{
-            background-color: aquamarine;
             display: grid;
-            grid-template-rows:  0.2fr 0.4fr ;
+            grid-template-columns: minmax(auto,1fr) minmax(auto,1fr);
+            grid-template-rows: minmax(auto,1fr) minmax(auto,1fr);
+            align-items: center;
         }
+            .image{
+               
+                height: 100%;
+             
+                grid-column-start: 1;
+                grid-column-end: 3;
+                grid-row-start: -3;
+                grid-row-end: -1;
+            }
+                .mujerVino{
+                    width: 100%;
+                    height: 100%;
+                }
+              
+                
+        .texto{
+           
+            display: grid;
+            grid-template-rows:  minmax(auto,0.5fr) minmax(auto,0.7fr) ;
+        }
+            .enlaces{
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                column-gap: 3vh;
+            }
+                .enlaces-css{
+                    display: flex;
+                    justify-content: flex-end;
+                }
+                .enlaces-css div{
+                    border-radius: 50%;
+                    width: 100px;
+                    height: 100px;
+                    background: blue;
+                    display: flex;
+                    justify-content: center;
+
+                    
+                }
+
+                    .img_section svg{
+                    width: 30%;
+                   
+                    
+                    }
+
+                 
+                
             .section{
                 display: grid;
-                grid-template-rows: minmax(auto ,1fr) minmax(auto ,1fr) ;
+                grid-template-rows: minmax(auto ,0.3fr) minmax(auto ,0.3fr) ;
             }
                 .parrafo{
                     font-size: 2.2vh;
@@ -64,7 +110,18 @@ body{
             width: 23vh;
             border-radius: 1vh;
             color:white;
-            background: red;
-            margin-bottom: 6vh;
+            background: rgb(179, 0, 0);
+            /* margin-bottom: 6vh; */
             }
    
+/*responsive*/
+
+@media all and (max-width:1465px){
+    .image{
+       height: auto;
+        
+    }
+    .mujerVino{
+        height: auto;
+    }
+}
