@@ -17,12 +17,13 @@ body,html{
     
     .header{
         background: whitesmoke;
-        width: 56%;
-        justify-self: center;
+       
+        
     }
         .header h3{
             color:gray;
             letter-spacing: 3px;
+          
             
         }
         .header p{
@@ -46,18 +47,92 @@ body,html{
       
 
     }
+    .first-title{
+        margin: 0vh -2vh 0vh 4vh;
+    }
+        .first-title h2{
+            color: rgb(204, 0, 0);
+        }
+    .normal-text{
+        margin: 0vh -2vh 0vh 4vh;
+    }
+        
         .articles{
-            width:55vh ;
-            height: 55vh;
+            width:65vh ;
+            height: 65vh;
             display:grid;
-            grid-template-rows: repeat(auto,1fr,auto);
+            grid-template-rows:subgrid;
+            grid-row: span 3;
+            gap:0px;
             background: white;
             border-radius: 1.5vh;
         }
     .icons{
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
+        margin: 0vh -2vh 0vh 4vh;
     }
         .icons img{
             width: 3vh;
         }    
+
+
+/*Responsive*/
+@media all and (max-width:1871px){
+    .header h3{
+        padding-left: 37vh;
+    }
+    .header p{
+        padding-left:39vh;
+    }
+}
+@media all and (max-width: 1781px){
+    .header{
+        width: 76%;
+    }
+}
+@media all and (max-width:1501px){
+    .header{
+        justify-self: center;
+        margin-left: auto;
+    }
+    .container-articles{
+        width: auto;
+        height: auto;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(4,1fr);
+    }
+    .articles{
+        width: 120vh;
+        height: 120vh;
+    }
+    .first-title{
+       justify-self: center;
+    }
+    .normal-text{
+        justify-self: center;
+    }
+    .icons{
+        justify-content: space-between;
+        margin: 0vh -2vh 0vh 25vh;
+    }
+@media all and (max-width:1201px){
+    .header{
+        margin-right: 15vh;
+       
+    }
+}
+@media all and (max-width:1001px){
+    .articles{
+        grid-template-columns: subgrid;
+        grid-column: span 1;
+        grid-template-rows: subgrid;
+        grid-row: span;
+    }
+}
+}
+@media all and (max-width:800px){
+    .header{
+        margin-right: 20vh;
+    }
+}
