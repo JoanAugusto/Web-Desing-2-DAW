@@ -1,7 +1,7 @@
 body,html{
-    height: 100%;
-    width: 100%;
-    background: white;
+    height: 99%;
+    width: 99%;
+    background: teal;
    
 }
 
@@ -9,7 +9,7 @@ body,html{
     
     width:100%;
     height: 100%;
-    background: black;
+    background: teal;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     grid-template-rows:1fr 1fr 1fr 1fr 1fr ;
@@ -19,29 +19,106 @@ body,html{
                         "celda5 celda5 celda4 celda4 celda4"
                         "celda5 celda5 celda4 celda4 celda4 ";
     
-
+    row-gap: 3vh;
+    column-gap:3vh;
 }
    
     .celda1{
         background: teal;
         grid-area: celda1;
+        justify-items:center ;
+       
     }
         .celda1 p{
+            font-size: 8vh;
             
         }
     .celda2{
         background: teal;
         grid-area: celda2;
+        justify-items: center;
     }
+        .celda2 p{
+            font-size: 8vh;
+        }
     .celda3{
         background: teal;
         grid-area: celda3;
+        justify-items:center ;
     }
+        .celda3 p{
+            margin-top: 14vh;
+            font-size: 8vh;
+        }
     .celda4{
-        background: teal;
+       background: white;
         grid-area: celda4;
+        margin: 7vh;
+        display: grid;
+        grid-template-columns: repeat(6,1fr);
+        grid-template-rows: repeat(6,1fr);
+        grid-template-areas: "grid grid grid grid grid grid"
+                            "grid grid grid grid grid grid"
+                            "lista2 lista2 lista2 lista3 lista3 lista3"
+                            "lista2 lista2 lista2 lista3 lista3 lista3"
+                            "lista4 lista4 lista4 lista5 lista5 lista5"
+                            "lista4 lista4 lista4 lista5 lista5 lista5";
+        row-gap: 1vh;
+        column-gap: 1vh;
     }
+        .celda4  div{
+            background: blue;
+
+        }
+            .grid{
+               grid-area: grid;
+            }
+                .grid p{
+                    font-size: 4vh;
+                    margin-top: 7vh;
+                    justify-self: center;
+                }
+            .lista2{
+             grid-area:lista2 ;
+             
+            }
+                .lista2 p{
+                    font-size: 4vh;
+                    margin-top: 7vh;
+                    justify-self: center;
+                }
+            .lista3{
+                grid-area:lista3 ;
+            }
+                .lista3 p{
+                    font-size: 4vh;
+                    margin-top: 7vh;
+                    justify-self: center;
+                }
+            .lista4{
+                grid-area: lista4;
+            }
+                .lista4 p{
+                    font-size: 4vh;
+                    margin-top: 7vh;
+                    justify-self: center;
+                }
+            .lista5{
+                grid-area: lista5;
+            }
+                .lista5 p{
+                    font-size: 4vh;
+                    margin-top: 7vh;
+                    justify-self: center;
+                }
+    
     .celda5{
         background: teal;
         grid-area: celda5;
+        justify-items:center ;
     }
+        .celda5 p{
+            margin-top: 14vh;
+            font-size:8vh ;
+
+        }
