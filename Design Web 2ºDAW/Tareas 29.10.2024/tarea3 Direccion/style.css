@@ -1,0 +1,52 @@
+html,body{
+    width: 98%;
+    height: 98%;
+    background: black;
+}
+body{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+    .container-texts{
+        background: whitesmoke;
+        display: grid;
+        grid-template-rows: auto 1fr;
+       
+    }
+        .text{
+            
+        }  
+        .text-low{
+            justify-self:center ;
+           
+            width: 50%;
+            height: 70%;
+        }
+            .text-low p{
+                
+            }
+    img{
+        width: 25vh;
+        height: 20vh;
+    }
+    .container-images{
+        background: red;
+        display: grid;
+        grid-template-rows: auto auto;
+    }
+        .five-images{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+            column-gap: 3vh;
+        }
+    .container-image{
+       
+        width: 70%;
+        height: auto;
+        justify-self: center
+    }
+        .container-image img{
+            width: 100%;
+            height: auto;
+        }
+
