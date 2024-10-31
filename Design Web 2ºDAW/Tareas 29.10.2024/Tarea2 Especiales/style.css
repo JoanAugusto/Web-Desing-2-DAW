@@ -78,3 +78,20 @@ html,body{
                 font-size: 2vh;
                 color:gray;
             }
+
+/*Responsive*/
+
+@media all and (max-width:1025px){
+    .container-images{
+        
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto auto auto;
+        
+    }
+}
+@media all and (max-width:460px){
+    .container-images{
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto auto auto;
+    }
+}

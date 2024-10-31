@@ -49,7 +49,7 @@ html,body{
 
 
     .section{
-        background: gray;
+        
         width: 100%;
         height: 80vh;
         display: grid;
@@ -81,7 +81,7 @@ html,body{
                 display: grid;
                 grid-template-rows: subgrid;
                 grid-row: span 2;
-                gap: 3vh;
+                gap: 4vh;
             }
                 .img img{
                     background: rosybrown;
@@ -97,4 +97,23 @@ html,body{
                     .text-img p{
                         margin: 20px 0px 0px 20px;
                     }
-             
+/*Responsive*/
+
+@media all and (max-width:541px){
+     .container-images{
+            height: auto;
+            grid-template-columns: auto   ;
+            gap: 6vh;
+            background-color: gray;
+        }
+            .text-img p{
+                padding: 0vh 0vh 2vh 0vh;
+               
+            }
+               
+    .article{
+        height: auto;
+        
+    }      
+
+}
