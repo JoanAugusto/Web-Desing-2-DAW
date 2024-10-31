@@ -1,38 +1,40 @@
 html,body{
-    width: 98%;
-    height: 98%;
-    background: black;
+    width: auto;
+    height: auto;
+    
 }
 body{
+    height: auto;
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 0.4fr 0.8fr;
+    column-gap: 20%;
 }
     .container-texts{
-        background: whitesmoke;
+        
         display: grid;
-        grid-template-rows: auto 1fr;
+        grid-template-rows: auto auto;
+        row-gap: 8%;
        
     }
         .text{
-            
+           background-color: violet; 
         }  
         .text-low{
+            background-color: green;
             justify-self:center ;
            
             width: 50%;
-            height: 70%;
+            height: auto;
         }
             .text-low p{
                 
             }
-    img{
-        width: 25vh;
-        height: 20vh;
-    }
+    
     .container-images{
-        background: red;
+        
         display: grid;
-        grid-template-rows: auto auto;
+        grid-template-rows: 0.3fr auto;
+        row-gap: 25%;
     }
         .five-images{
             display: grid;
@@ -43,10 +45,31 @@ body{
        
         width: 70%;
         height: auto;
-        justify-self: center
+        display: flex;
+        justify-self: flex-end;
     }
         .container-image img{
-            width: 100%;
-            height: auto;
+            width: 80%;
+            height: 80%;
+           
+            
         }
+
+    .container-ball{
+        width: auto;
+        height: auto;
+    }
+        .container-ball img{
+            width: 100%;
+            height: 100%;
+        }
+
+/*Responsive*/
+
+@media all and (max-width:1024px){
+    img{
+        object-fit: cover;
+    }
+
+}
 
