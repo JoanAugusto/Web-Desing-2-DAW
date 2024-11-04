@@ -1,0 +1,79 @@
+html,body{
+    background-color: bisque;
+}
+
+.header{
+    border: 1px solid black;
+    
+}
+
+
+    .nav{
+        display: flex;
+        padding-left: 4%;
+        justify-self: center;
+    }
+       
+        .nav li {
+            display: inline-block;
+            height:7vh;
+            padding: 1vh 2vh 1vh 2vh;
+            
+            
+            
+           
+           
+            
+        }
+            
+        .nav a{
+            text-decoration: none;
+        }
+    .lista{
+        background-color: black;
+        margin-right: 3vh;  
+        
+            
+    }
+        .lista a{
+            color:white;
+        }
+        .lista:hover{
+            background-color:gray;
+        }
+        
+.submenu1{
+    
+   margin-top: 2vh;
+   margin-left: -2vh;
+}
+   
+    .sub-lista{
+        background-color: black;
+    }
+    .sub-lista:hover{
+        background-color: gray;
+    }
+.submenu2{
+   
+    margin-left: -2vh;
+}
+    .sub2-lista{
+        background-color: black;
+    }
+    .sub2-lista:hover{
+        background-color: gray;
+    }
+
+    /*Cambios par que se ve desplegble*/
+
+
+.submenu2{
+    display: none;
+    position: absolute;/*Posiscion bsolute se lo indicamos  kls hijs siempre y el reltive  l clse pdre que seria lss lists primarias*/
+    min-height: 125px;
+}
+
+    .nav li:hover > ul{
+        display: block;
+    }
