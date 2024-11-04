@@ -1,0 +1,106 @@
+body,html{
+    width: 98%;
+    height: 98%;
+    background-color: grey;
+}
+.container-formulario{
+    justify-self: center;
+    width: 30%;
+    border: 1px solid black;
+    height: 52%;
+    
+}
+    .text{
+        font-size: 2vh;
+        justify-self: center;
+    }   
+        
+    .line{
+        margin-top: 5%;
+    }
+    form{
+    border-style:dashed;
+    
+    width: 30vh;
+    height: auto;
+    margin-left: 5%;
+    }
+        .container-login{
+            display: flex;
+        }
+            .login-text{
+                margin-left: 4%;
+            }
+            .login-input{
+                margin-left:13%; 
+                margin-top: 4%;
+            }
+                .login-input input{
+                    height: 60%;
+                }
+        .container-password{
+            display: flex;
+        }
+            .password-text{
+                margin-left: 4%;
+            }
+            .password-input{
+                margin-left:5%;
+                margin-top: 4%;
+            }
+                .password-input input {
+                    height: 60%;
+                }
+        .container-descripcion{
+            display: flex;
+        }
+            .descripcion-text{
+                margin-left: 4%;
+            }
+            .container-descripcion textarea{
+                height: 80%;
+                width: 108%;
+            }
+
+       
+    .checkbox1{
+        width: auto;
+        height: auto;
+        display: flex;
+        padding-bottom: 5%;
+    }
+        .checkbox1-text{
+            margin-top: 8.3%;
+            margin-left: 4%;
+        }
+    .radio{
+        display: flex;
+        
+        
+    }
+        .radio-text {
+            margin-top: -2%;
+            margin-left: 4%;
+        }
+        .radio-check{
+            margin-left: 10%;
+        }
+        
+    .container-boton{
+        display: flex;
+        margin: 0 0 3% 3%;
+    }
+        .enviar{
+            margin-right: 4%;
+        }
+        .enviar button{
+            height: 3vh;
+            border-style:double;
+        }
+        .vaciar button{
+            height: 3vh;
+            border-style: double;
+        }
+    
+
+    
