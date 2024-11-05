@@ -1,0 +1,84 @@
+/*Style for mine index*/
+*{
+    margin: 1%;
+    padding: 2%;
+}
+.father{
+    background-color:blue;
+    height: auto;
+}
+    .container-header{
+        background-color: aqua;
+        display: flex;
+        flex-direction: column;
+        
+    }
+        .container-logo{
+            background-color: brown;
+            display: flex;
+            justify-content: center;
+        }
+            .container-logo img{
+                width: 10%;
+                
+            }
+        
+        .container-navegation{
+            background-color: beige; 
+        }
+            .firstList{
+                display: flex;
+                
+
+            }
+                .firstList li{
+                    list-style: none;
+                    height: 20%;
+                    position: relative;
+                   
+                    
+                }
+                    .firstList li:hover{
+                        background-color: blue;
+                        color: white;
+                    }
+            .sublist{
+                margin-top: 10%;
+                display: grid;
+                grid-template-rows: subgrid;
+                grid-template-columns: repeat(4,4fr);
+                grid-row: span 4;
+                row-gap: 3%;
+                column-gap: 3%;
+               
+                
+            }
+                .firstList li:hover .sublist{
+                    display: block;
+                }
+                .sublist{
+                    display: none;
+                    position: absolute;
+                    min-height: 30vh;
+                    z-index: 1000;
+                }
+                .sublist li{
+                    margin: 20% 0 0 0;
+                }
+    .container-bigImage{
+        background-image:url(./images/backiee-101621.jpg);
+        background-size: cover;
+        background-position: center;
+    }
+    .container-text{
+        background-color: cadetblue;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
+        
+    }
+        
+        
+        
+        
