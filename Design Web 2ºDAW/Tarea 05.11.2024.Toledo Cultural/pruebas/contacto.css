@@ -1,0 +1,198 @@
+html,body{
+    height: 100%;
+ }
+ .father{
+    
+     height: 100%;
+ 
+ }
+     .container-header{
+       
+         display: flex;
+         flex-direction: column;
+         height: auto;
+         
+     }
+         .container-logo{
+            
+             display: flex;
+             justify-content: center;
+             height: 40%;
+         }
+             .container-logo img{
+                 width: 10%;
+                 
+             }
+         
+         .container-navegation ul li{
+             background-color: beige; 
+            
+         
+         }
+      
+             .firstList{
+                display: flex;
+                justify-self: center;
+ 
+                
+                 width: 80%;
+                 
+                 
+             }
+                 .firstList li{
+                    display: inline-block;
+                     list-style: none;
+                     height: auto;
+                    position: relative;
+                    margin-right: 10%;
+                    width: 115%;
+                    
+                   
+                     
+                 }
+                    
+                         .firstList a {
+                             color:brown;
+                             text-decoration: none;
+                             
+                         }
+                         .gold a{
+                             color: gold;
+                            
+                         }
+                     .firstList li:hover{
+                         background-color: blue;
+                         color: white;
+                     }
+             .sublist{
+                 margin-top: 1%;
+                 display: grid;
+                
+                 grid-template-rows: subgrid;
+                 grid-template-columns: repeat(4,1fr);
+                 grid-row: span 4;
+                 row-gap: 3%;
+                 column-gap: 3%;
+                 
+                
+                 width: 60%;
+                 height: 10%;
+                
+                 
+             }
+             
+                 
+               
+                 .sublist li{
+                     margin: 20% 0 0 40%;
+                 }
+     
+          .sublist{
+             display: none;
+             position: absolute;
+         }     
+         
+         
+         .firstList li .sublist li{
+             display: block;
+         }
+
+.container-bigImage{
+    width: 100%;
+    
+}
+    
+    .container-bigImage img{
+        width: 100%;
+        height: 70vh;
+        object-fit: cover;
+}
+    
+    
+.subFather{
+    background-color: blueviolet;
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-areas: "text text text text aside aside"
+                        "text text text text aside aside"
+                        "text text text text aside aside"
+                         "text text text text aside aside"
+                          "text text text text aside aside"
+                        "form form form form form form"
+                        "form form form form form form"
+                        "form form form form form form"
+                        "form form form form form form"
+                        "form form form form form form"
+                        "post post post post post post"
+                        "post post post post post post"
+                        "post post post post post post"
+                        "footer footer footer footer footer footer"
+                        "footer footer footer footer footer footer"
+                        "footer footer footer footer footer footer";
+
+}
+    .container-text{
+        background-color: blue;
+        grid-area: text;
+    }
+    .form{
+        background-color: cadetblue;
+        grid-area: form;
+        
+    }
+        .global-form{
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            grid-template-rows: repeat(5,1fr);
+            width: 50%;
+            justify-self: center;
+            margin-right:8%;
+            position: relative;
+        }
+        .form p{
+            font-size: 5vh;
+        }
+        
+        .container-check{
+
+        }
+            .container-check p{
+                font-size: 3vh;
+            }
+    .aside{
+        background-color: aqua;
+        grid-area: aside;
+        display: grid;
+    }
+        .aside-text{
+            font-size: 3vh;
+        }
+        .search{
+
+        }
+            .search input{
+                height: 6vh;
+            }
+                .search button{
+                    height: 6.8vh;
+                    margin-left: -0.9%;
+                }
+        .container-contact{
+            display: grid;
+
+        }
+            .primary{
+                font-size: 3vh;
+            }
+            .secundary{
+                font-size: 2vh;
+            }
+    .postForm{
+        background-color: brown;
+        grid-area: post;
+    }
+    .footer{
+        background-color: bisque;
+        grid-area: footer;
+    }

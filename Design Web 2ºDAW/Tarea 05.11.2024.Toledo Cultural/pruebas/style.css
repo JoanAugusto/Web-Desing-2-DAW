@@ -1,83 +1,133 @@
 /*Style for mine index*/
-*{
-    margin: 1%;
-    padding: 2%;
+html,body{
+   height: 100%;
 }
 .father{
-    background-color:blue;
-    height: auto;
+   
+    height: 100%;
+
 }
     .container-header{
-        background-color: aqua;
+      
         display: flex;
         flex-direction: column;
+        height: auto;
         
     }
         .container-logo{
-            background-color: brown;
+           
             display: flex;
             justify-content: center;
+            height: 40%;
         }
             .container-logo img{
                 width: 10%;
                 
             }
         
-        .container-navegation{
+        .container-navegation ul li{
             background-color: beige; 
+           
+        
         }
+     
             .firstList{
-                display: flex;
-                
+               display: flex;
+               justify-self: center;
 
+               
+                width: 80%;
+                
+                
             }
                 .firstList li{
+                   display: inline-block;
                     list-style: none;
-                    height: 20%;
-                    position: relative;
+                    height: auto;
+                   position: relative;
+                   margin-right: 10%;
+                   width: 115%;
                    
+                  
                     
                 }
+                   
+                        .firstList a {
+                            color:brown;
+                            text-decoration: none;
+                            
+                        }
+                        .gold a{
+                            color: gold;
+                           
+                        }
                     .firstList li:hover{
                         background-color: blue;
                         color: white;
                     }
             .sublist{
-                margin-top: 10%;
+                margin-top: 1%;
                 display: grid;
+               
                 grid-template-rows: subgrid;
-                grid-template-columns: repeat(4,4fr);
+                grid-template-columns: repeat(4,1fr);
                 grid-row: span 4;
                 row-gap: 3%;
                 column-gap: 3%;
+                
+               
+                width: 60%;
+                height: 10%;
                
                 
             }
-                .firstList li:hover .sublist{
-                    display: block;
-                }
-                .sublist{
-                    display: none;
-                    position: absolute;
-                    min-height: 30vh;
-                    z-index: 1000;
-                }
+            
+                
+              
                 .sublist li{
-                    margin: 20% 0 0 0;
+                    margin: 20% 0 0 40%;
                 }
+    
+         .sublist{
+            display: none;
+            position: absolute;
+        }     
+        
+        
+        .firstList li .sublist li{
+            display: block;
+        }
     .container-bigImage{
-        background-image:url(./images/backiee-101621.jpg);
         background-size: cover;
         background-position: center;
+        
+       
     }
+        .container-bigImage img{
+            width: 100%;
+            height: 60vh;
+            object-fit: cover;
+            
+        }
     .container-text{
-        background-color: cadetblue;
+       
         display: flex;
         flex-direction: column;
         align-items: center;
         
         
     }
+        .text1{
+            font-size: 30px;
+            text-align: center;
+            color: rgb(171, 134, 74);
+        }
+        .text2{
+            font-size: 30px;
+            text-align: center;
+            color: rgb(171, 134, 74);
+            font-weight: bold;
+        }
         
         
         
