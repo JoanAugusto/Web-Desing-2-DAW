@@ -110,10 +110,11 @@ html,body{
     
     
 .subFather{
-    background-color: blueviolet;
+    background-color:white;
     width: 100%;
-    height: 100%;
+    height:auto;
     display: grid;
+
     grid-template-areas: "text text text text aside aside"
                         "text text text text aside aside"
                         "text text text text aside aside"
@@ -130,26 +131,147 @@ html,body{
                         "footer footer footer footer footer footer"
                         "footer footer footer footer footer footer"
                         "footer footer footer footer footer footer";
+    
 
 }
     .container-text{
-        background-color: blue;
+        background-color:white;
         grid-area: text;
+        display: flex;
+        justify-content: flex-end;
     }
+    
+        .container-text p{
+            word-spacing: 0.5px;
+
+            font-size: 2.3vh;
+        }
+        
+        .container-text a{
+            color: red;
+            text-decoration: none;
+        }
+        .container-text b{
+            color: gray;
+        }
+        .tiquimisquis{
+            color: black;
+        }
+            
     .form{
-        background-color: cadetblue;
+        background-color:white;
         grid-area: form;
+       display: grid;
+       grid-template-columns: auto;
+       width: 50%;
+       height: auto;
+       justify-self: center;
         
     }
         .global-form{
             display: grid;
-            grid-template-columns: repeat(3,1fr);
-            grid-template-rows: repeat(5,1fr);
+            grid-template-columns:subgrid ;
+            grid-column: span 12;
+            grid-template-rows:subgrid;
+            grid-row: span 6;
+            row-gap: 3vh;
+            column-gap: 2%;
             width: 50%;
             justify-self: center;
             margin-right:8%;
             position: relative;
+            align-items: center;
+            height: auto;
         }
+            .global-form input{
+                background-color: rgba(169,184,195);
+            }
+            .global-form p{
+                grid-row:1/2;
+                grid-column: 1 / span 2;
+                color:#ab864a;
+            }
+                .global-form input{
+                    height:6vh;
+                    width:98% ;
+                    
+                }
+            .name{
+                grid-row: 2/3;
+                grid-column:1 / span 2 ;
+            }
+            .direction{
+                grid-row:2/3 ;
+                grid-column: 3 / span 6;
+                
+            }
+                .direction input{
+                    width: 110%;
+                }
+            .numberPhone{
+                grid-row: 3/4;
+                grid-column:1 / span 2 ;
+            }
+            .asunt{
+                grid-row:3/3;
+                grid-column: 3 / span 6;
+                width: 112.5%;
+                
+            }
+            .bigtext{
+                
+                grid-row: 4/5;
+                grid-column: 1/ span 8;
+ 
+            }
+                .bigtext textarea{
+                    width: 105%;
+                    height: 32vh;
+                    background-color: rgba(169,184,195);
+                }
+            .container-check{
+                grid-row:5/6;
+                grid-column: 1/ span 9;
+                display: grid;
+                grid-row: repeat(3,1fr);
+               
+            }
+                .container-check input{
+                    height: 2vh;
+                }
+                .check-text{
+
+                }
+                    .check-text p{
+                        color: #666;
+                    }
+                .container-accept{
+
+                }
+                    .container-accept p{
+                        color: #666;
+                    }
+                    .container-accept input{
+                        width: auto;
+                    }
+                .container-boton{
+                    display:flex;
+                    width: auto;
+                    height: 8vh;
+                    justify-content: flex-end;
+                    border-radius: 3%;
+                    
+                }
+                    .container-boton button{
+                        width: 15vh;
+                        border:3px solid #ab864a;
+                        color: #ab864a;
+                        border-radius: 8%;
+                    }
+                        
+                    .accept-check{
+
+                    }
         .form p{
             font-size: 5vh;
         }
@@ -161,16 +283,23 @@ html,body{
                 font-size: 3vh;
             }
     .aside{
-        background-color: aqua;
+        background-color: white;
         grid-area: aside;
         display: grid;
+        justify-self: center;
     }
+        .aside button{
+            background-color: rgba(169,184,195);
+            border: 0px;
+        }
         .aside-text{
             font-size: 3vh;
+            color:#ab864a;
         }
         .search{
 
         }
+            
             .search input{
                 height: 6vh;
             }
@@ -184,15 +313,30 @@ html,body{
         }
             .primary{
                 font-size: 3vh;
+                color:#ab864a;
             }
             .secundary{
                 font-size: 2vh;
             }
     .postForm{
-        background-color: brown;
+        background-color:white;
         grid-area: post;
+        width: 50%;
+        justify-self: center;
     }
+        .postForm p{
+            text-align: center;
+            font-size: 3vh;
+            color: #666;
+            
+        }
+            .postForm a{
+                text-decoration: none;
+                color: red;
+            }
     .footer{
         background-color: bisque;
         grid-area: footer;
+        display: flex;
+        justify-content: center;
     }
