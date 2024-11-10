@@ -1,3 +1,4 @@
+/*Style for mine index*/
 html,body{
     height: 100%;
  }
@@ -25,27 +26,27 @@ html,body{
              }
          
          .container-navegation ul li{
-             background-color: beige; 
+            
             
          
          }
       
              .firstList{
                 display: flex;
-                justify-self: center;
+               justify-content: center;
  
                 
-                 width: 80%;
+                 width: auto;
                  
                  
              }
                  .firstList li{
                     display: inline-block;
                      list-style: none;
-                     height: auto;
-                    position: relative;
-                    margin-right: 10%;
-                    width: 115%;
+                     margin: 4vh;
+                    
+                    
+                    background-color: beige; 
                     
                    
                      
@@ -62,41 +63,53 @@ html,body{
                          }
                      .firstList li:hover{
                          background-color: blue;
-                         color: white;
+                        
                      }
              .sublist{
-                 margin-top: 1%;
+                 margin-top: 0%;
                  display: grid;
                 
                  grid-template-rows: subgrid;
                  grid-template-columns: repeat(4,1fr);
                  grid-row: span 4;
-                 row-gap: 3%;
+                 row-gap: 2%;
                  column-gap: 3%;
-                 
-                
                  width: 60%;
                  height: 10%;
+                 margin-left: -40vh;
+                 display: none;
+                 position: absolute;
+             
+             }
+                 .sublist li{
+                     background-color: whitesmoke;
+                 }
+            
+                 .sublist li:hover{
+                     color: black;
+                     background-color:gray ;
+                 }
+             .firstList li:hover> .sublist {
+                 display: block;
                 
+                 display: grid;
+                
+                 grid-template-rows: subgrid;
+                 grid-template-columns: repeat(4,1fr);
+                 grid-row: span 4;
                  
+                 width: 60%;
+                 height: auto;
+                 margin-left: -40vh;
+                 background-color: beige;
+               
+                 
+ 
              }
              
                  
                
-                 .sublist li{
-                     margin: 20% 0 0 40%;
-                 }
-     
-          .sublist{
-             display: none;
-             position: absolute;
-         }     
-         
-         
-         .firstList li .sublist li{
-             display: block;
-         }
-
+              
 .container-bigImage{
     width: 100%;
     
@@ -182,9 +195,11 @@ html,body{
             position: relative;
             align-items: center;
             height: auto;
+           
         }
             .global-form input{
                 background-color: rgba(169,184,195);
+                border:0px;
             }
             .global-form p{
                 grid-row:1/2;
@@ -228,6 +243,7 @@ html,body{
                     width: 105%;
                     height: 32vh;
                     background-color: rgba(169,184,195);
+                    border:0px;
                 }
             .container-check{
                 grid-row:5/6;

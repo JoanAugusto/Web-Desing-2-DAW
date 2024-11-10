@@ -26,27 +26,27 @@ html,body{
             }
         
         .container-navegation ul li{
-            background-color: beige; 
+           
            
         
         }
      
             .firstList{
                display: flex;
-               justify-self: center;
+              justify-content: center;
 
                
-                width: 80%;
+                width: auto;
                 
                 
             }
                 .firstList li{
                    display: inline-block;
                     list-style: none;
-                    height: auto;
-                   position: relative;
-                   margin-right: 10%;
-                   width: 115%;
+                    margin: 4vh;
+                   
+                   
+                   background-color: beige; 
                    
                   
                     
@@ -63,40 +63,57 @@ html,body{
                         }
                     .firstList li:hover{
                         background-color: blue;
-                        color: white;
+                       
                     }
             .sublist{
-                margin-top: 1%;
+                margin-top: 0%;
                 display: grid;
                
                 grid-template-rows: subgrid;
                 grid-template-columns: repeat(4,1fr);
                 grid-row: span 4;
-                row-gap: 3%;
+                row-gap: 2%;
                 column-gap: 3%;
-                
-               
                 width: 60%;
                 height: 10%;
+                margin-left: -40vh;
+                display: none;
+                position: absolute;
+            
+            }
+                .sublist li{
+                    background-color: whitesmoke;
+                }
+           
+                .sublist li:hover{
+                    color: black;
+                    background-color:gray ;
+                }
+            .firstList li:hover> .sublist { /*Recordatorio cerrar bien las listas y revidsar que la la il a leegir para sublista debe englobbar la nueva sublista*/
+                display: block;
                
+                display: grid;
+               
+                grid-template-rows: subgrid;
+                grid-template-columns: repeat(4,1fr);
+                grid-row: span 4;
                 
+                width: 60%;
+                height: auto;
+                margin-left: -40vh;
+                background-color: beige;
+              
+                
+
             }
             
                 
               
-                .sublist li{
-                    margin: 20% 0 0 40%;
-                }
-    
-         .sublist{
-            display: none;
-            position: absolute;
-        }     
+              
+       
         
         
-        .firstList li .sublist li{
-            display: block;
-        }
+        
     .container-bigImage{
         background-size: cover;
         background-position: center;
@@ -128,7 +145,79 @@ html,body{
             color: rgb(171, 134, 74);
             font-weight: bold;
         }
+
+
+/*code css for mine section of articles*/
+
+.container-section{
+    height: 100%;
+    width: 80%;
+   
+    margin-top: 8%;
+    justify-self: center;
+}
+    .section-text{
+       
+        height: 8%;
+        display: flex;
+        align-items:center ;
+        justify-content: center;
+    }
+        .section-text h1{
+            text-transform: uppercase; 
+            letter-spacing: 2px;
+            color: rgb(171, 134, 74);
+        }   
+    .container-articles{
+      
+        height: auto;
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        grid-template-rows:subgrid;
+        grid-row: span 2;
+        row-gap: 0%;
+
+        column-gap: 4%;
         
+        
+    }
+        .article{
+           
+            
+            display: grid;
+            grid-template-rows: subgrid;
+            grid-row:span  4;
+            row-gap: 0%;
+           
+            
+        }
+            .article-img img{
+                width: 100%;
+
+            }
+           
+                .article-h3 p{
+                    color: rgb(171, 134, 74);
+                }
+           
+            .article-price p{
+                font-size:3vh ;
+                color: rgb(171, 134, 74);
+            }
+            .article-price sub{
+                color:grey;
+            }
+        
+            .article-time{
+                height: 5vh;
+            }
+                .article-time sup{
+                    font-size:2vh ;
+                    color:gray;
+                }
+               
+                
+            
         
         
         
