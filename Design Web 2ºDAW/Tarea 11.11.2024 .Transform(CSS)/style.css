@@ -1,0 +1,24 @@
+/*code css for prove the property transform*/
+.container-image img{
+    width: 40%;
+    -webkit-transform: translate(70%);/*El translate indica el movimiento o que tendrá el div
+    contando desde donde esté el div seria el centro y con los ejes de abcisas
+    indicará el desplazamiento de derecha e izquierda o arriba  y abajo (positivo baja , negativo sube en eje y) y (postivo derecha y negtivo izquierda eje x)
+     */
+     transform: rotate(300deg);/*Hace que rote la imagen segun los grados (deg) puestos*/
+     transform: scale();/*El primer valor indica*/
+     transform: skew(50,40);/*El primer valor inidca el horizontal y el otro la vertical*/
+
+     /*transition*/
+     transition: left 2s; /*indicamos lo que tiene que hacer para despues usar el hover*/
+}
+
+.container-image{
+    border:1px solid black;
+    width: 100%;
+    height: 100%;
+    justify-self: center;
+    
+    
+   
+}

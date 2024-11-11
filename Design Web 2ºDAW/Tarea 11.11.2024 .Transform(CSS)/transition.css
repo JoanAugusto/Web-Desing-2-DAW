@@ -1,0 +1,46 @@
+/*cambair la imagen , el div y el color*/
+/* #martillo img{
+    width: 25%;
+    
+}
+#martillo{
+    background-color:orange;
+    width:100px;
+    height:175px;
+    transition:left 1.5s, background-color 2s, width 1s, height 1s, padding-left 1s, padding-top 1s ease-in;
+    object-fit: cover;
+}
+#martillo:hover{
+    position:relative;
+    left:400px;
+    background-color:black;
+    width:225px;
+    height:200px;
+    object-fit: cover;
+    padding-left:100px;
+    padding-top:20px;
+} */
+/*transition normal*/
+/* #martillo img{
+    width: 20%;
+    transition: left 1.5s;
+}
+#martillo{
+    
+}
+#martillo :hover{
+    position: relative;
+    left: 500px;
+} */
+
+#martillo img{
+    width: 25%;
+    
+}
+#martillo{
+   opacity:1;
+   transition: opacity 2s ease-out;
+}
+#martillo:hover{
+    opacity: 0;
+}

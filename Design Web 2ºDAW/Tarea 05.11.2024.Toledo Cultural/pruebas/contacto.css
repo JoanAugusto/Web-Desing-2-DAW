@@ -245,6 +245,7 @@ html,body{
                     height: 32vh;
                     background-color: rgba(169,184,195);
                     border:0px;
+                    
                 }
             .container-check{
                 grid-row:5/6;

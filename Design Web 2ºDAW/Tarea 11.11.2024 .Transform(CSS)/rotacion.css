@@ -1,0 +1,19 @@
+#martillo img{
+    width: 40%;
+}
+#martillo{
+    opacity: 700;
+    
+   transform: rotate(0deg);
+   width: 100%;
+}
+
+#martillo:hover{
+    transition: padding-left 2s ,opacity 4s,transform 6s ease-in-out; 
+    position: relative;
+    padding-left:300px;
+    opacity: 0;
+    transform: rotate(360000000000000000000deg);
+    
+    
+}
