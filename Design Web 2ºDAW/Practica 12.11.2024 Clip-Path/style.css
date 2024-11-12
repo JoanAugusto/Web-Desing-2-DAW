@@ -1,0 +1,16 @@
+html,body{
+    width: 99%;
+    height: 99%;
+}
+.container-image{
+    background-color: brown;
+    clip-path: url();
+
+}
+.pepe{
+    margin-top: 10%;
+    width: 100%;
+    height: 20%;
+    background-color: blue;
+    clip-path: inset(20% 20% 20% 20%) ;
+}
