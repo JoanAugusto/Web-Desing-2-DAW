@@ -1,0 +1,118 @@
+body {
+  font-family: "Raleway", sans-serif;
+}
+.modal {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  /* z-index: 1; */
+}
+
+.modal__container {
+  grid-column: 2/6;
+  margin: auto;
+  background-color: white;
+  height: 70%;
+  max-width: 1200px;
+  min-height: 50%;
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  position: relative;
+  
+}
+
+.modal__fondo {
+  background-color: crimson;
+  width: 150%;
+}
+
+.modal__close {
+  position: absolute;
+  background-color: blue;
+  color: white;
+  width: 30px;
+  height: 30px;
+  display: block;
+  text-align: center;
+  line-height: 30px;
+  text-decoration: none;
+  top: 0;
+  right: 0;
+  font-family: sans-serif;
+  font-weight: bold;
+  border-radius: 50%;
+  padding: 2%;
+}
+
+.modal__img {
+  grid-column: 1/4;
+  grid-row: 2/4;
+  width: 100%;
+  place-self: center;
+}
+
+.modal__text {
+  width: 100%;
+  grid-row: 2/4;
+  grid-column: 5/9;
+  place-self: center;
+  display: grid;
+
+  justify-items: start;
+}
+
+.modal__title {
+  font-size: 2rem;
+}
+
+.modal_paragraph {
+  font-size: 1rem;
+}
+
+.btn {
+  padding: 3% 8%;
+  color: white;
+  background-color: rgb(250, 59, 97);
+  border: none;
+}
+
+.modal2 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(62, 219, 122);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+  text-align: center;
+  clip-path: circle(0 at top right);
+  transition: clip-path 1s;
+}
+
+.menu {
+  list-style: none;
+}
+.menu li {
+  margin-top: 20%;
+}
+.menu a {
+  text-decoration: none;
+  color: white;
+}
+.modal2:target {
+    clip-path: circle(150% at bottom right);
+    transition: clip-path 1s;
+}
+.modal__close__dos{
+    margin: 10%;
+    padding: 1%;
+}
