@@ -1,0 +1,50 @@
+html,body{
+    width: 99%;
+    height: 100%;
+    
+}
+body{
+    background-color: beige;
+}
+.box{
+    width: 10%;
+    height: 15%;
+    background-color: aquamarine;
+    justify-self: center;
+    display: flex;
+    justify-content:center;
+    
+   
+   
+    clip-path: circle(40%);
+    transition: width 2s, 
+                height 2s, 
+                background-color 1s;
+    
+}
+    .box:hover{
+        
+        width: 400%;
+        height: 200%;
+        
+        background-color: brown;
+
+
+    }
+    .box a:focus ~ .box{
+        display: none;
+    }
+    .box img{
+       width: 4vh;
+       margin-left: -2vh;
+       cursor: pointer;
+        position: fixed;
+        margin-top: 5%;
+    }
+    
+    /*nav */
+    .nav{
+        
+       
+    }
+        

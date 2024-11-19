@@ -1,0 +1,55 @@
+html,body{
+    width: 99%;
+    height: 100%;
+}
+.box{
+    
+    width: 14%;
+    height: 20%;
+    justify-self: center;
+    margin-top: 20%;
+    background-color: aqua;
+    transition: 4s;
+    
+}
+.box:hover{ /*Cuando queremos que solo se aplique en la transicion de salida debemos sar :not()*/
+    background-color: brown;
+    transition: 2s;
+}
+/*Podemos espicificar un transition en el elemtnos y otro en el hover para hacer la cascada*/
+
+.box1{
+    width: 200px;
+  height: 200px;
+  background: grey;
+  align-items: center;
+  transition:/*tambine podemos indicar monton de porpiedades en una sola linea*/
+  margin-top 2s,  
+    width 4s,
+    background 2s;
+                    
+}
+.box1:hover{
+    margin-top: 10%;
+    width: 400px;
+    background-color: gold; /*transiciones en propiedades css.*/
+    box-shadow: 0 0 25px gold;
+}
+/*tipos de animación
+   linear: La velocidad de la animación es uniforme en todo el recorrido.
+ease: La velocidad se acelera al inicio, luego se retarda un poco y se acelera al final de nuevo.
+ease-in: La animación empieza lentamente y va aumentando progresivamente.
+ease-out: La animación empieza muy rápida y va descendiendo progresivamente.
+ease-in-out: La animación empieza y acaba lentamente, y es en la parte central 
+del recorrido donde la velocidad es más rápida. 
+
+En este apartado es posible posible especificar un tiempo (en segundos) que el navegador esperará antes de iniciar la animación.
+Se especifica el número de segundos a esperar seguido de la "s" (por ejemplo: 1s). 
+#martillo{
+   opacity:1;
+   transition:opacity 2s ease-out 0.5s;
+}
+
+#martillo:hover{
+   opacity:0;	
+}*/

@@ -1,0 +1,22 @@
+html,body{
+    width: 99%;
+    height: 100%;
+}
+.box{
+    width: 20%;
+    height: 30%;
+    background-color: brown;
+    justify-self: center;
+    margin-top: 20%;
+    /* transform:rotate(20deg); Esto son funciones 2d podemos hacer translate,scale,rotate,skewxoy
+    transform: scale(1);Esto sobreescribe la anterior , para evitarlo podemos escrbir todos en un transform , separados y asi no tendremos probelmas  */
+    transform: rotate(30deg) scale(0.7) translate(20px,100px);/*Con el transalate es como el de abcisas tiene un x e y*/
+    /*el orden es primordial , por ejemplo no e slo mismo hacer primero un translate y despues un transform
+        que hacer primero el rotate y depsues el translate debido a que tomara en cuineta la rotacion y eos cambia de direccion*/
+    
+        /*La propiedad transform-origin nos permite cambiar el punto de origen de una transformación, cosa que en algunos casos puede resultar bastante útil. Dicha función recibe por parámetro
+         la posición de origen de cada eje (X e Y)* transfomr.origin  0% 0%;*/
+
+       
+
+}
