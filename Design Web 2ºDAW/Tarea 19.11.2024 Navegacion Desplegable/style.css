@@ -53,6 +53,14 @@ img{
             .container p{
                margin-top:1vh;
             }
+        .arrow .roadButton{
+            transform: rotate(90deg);
+
+        }
+        .roadButton{
+            
+            transition: transform .3s;
+        }
     
     .sublist{
         display: flex;
@@ -61,29 +69,29 @@ img{
         position: relative;
         margin-top: 2vh;
         margin-bottom: -2vh;
+        position: relative;
     }
         .sublist li{
             display: flex;
             justify-content: center;
             
          
-            
+           
             width: 68%;
            
             margin-left: auto;
             border-left: 2px solid #303440;
             list-style: none;
+            position: relative;
             transition: height .4s;
             height: 0vh;
+           
+            
+            
         }
             .sublist li:hover{
                 background-color: #f6f8fa;
+               
+                
             }
-    .roadButton{
-        cursor: pointer;
-        transform: rotate(0deg);
-        transition: transform 1s;
-    }
-    .roadButton:hover{
-        transform: rotate(90deg);
-    }
+    
