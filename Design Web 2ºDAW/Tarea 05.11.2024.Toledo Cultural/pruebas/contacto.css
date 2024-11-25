@@ -1,126 +1,227 @@
 /*Style for mine index*/
 html,body{
+    margin: 0;
+    padding: 0;
+   height: 100%;
+}
+.father{
+   
     height: 100%;
- }
- .father{
+   
     
-     height: 100%;
- 
- }
-     .container-header{
-       
-         display: flex;
-         flex-direction: column;
-         height: auto;
-         
-     }
-         .container-logo{
-            
-             display: flex;
-             justify-content: center;
-             height: 40%;
-         }
-             .container-logo img{
-                 width: 10%;
-                 
-             }
-         
-         .container-navegation ul li{
-            
-            
-         
-         }
+}
+    .container-header{
       
-             .firstList{
-                display: flex;
-               justify-content: center;
- 
-                
-                 width: auto;
-                 
-                 
-             }
-                 .firstList li{
-                    display: inline-block;
-                     list-style: none;
-                     margin: 4vh;
-                    
-                    
-                    background-color: beige; 
-                    
-                   
-                     
-                 }
-                    
-                         .firstList a {
-                             color:brown;
-                             text-decoration: none;
-                             
-                         }
-                         .gold a{
-                             color: gold;
-                            
-                         }
-                     .firstList li:hover{
-                         background-color: blue;
-                        
-                     }
-             .sublist{
-                 margin-top: 4%;
-                 display: grid;
-                
-                 grid-template-rows: subgrid;
-                 grid-template-columns: repeat(4,1fr);
-                 grid-row: span 4;
-                 row-gap: 2%;
-                 column-gap: 3%;
-                 width: 60%;
-                 height: 10%;
-                 margin-left: -40vh;
-                 display: none;
-                 position: absolute;
-             
-             }
-                 .sublist li{
-                     background-color: whitesmoke;
-                 }
+       
+        height: auto;
+        
+       
+       
+       
+       
+        
+    }
+        .container-logo{
+           width: auto;
+            display: flex;
+            justify-content: center;
+            height: 40%; 
+            transform: scale(100%);
+            transition: transform 1s;
             
-                 .sublist li:hover{
-                     color: black;
-                     background-color:gray ;
-                 }
-             .firstList li:hover> .sublist {
-                 display: block;
-                
-                 display: grid;
-                
-                 grid-template-rows: subgrid;
-                 grid-template-columns: repeat(4,1fr);
-                 grid-row: span 4;
-                 
-                 width: 60%;
-                 height: auto;
-                 margin-left: -40vh;
-                 background-color: beige;
+            position:sticky;
+            z-index: 2000;
+            top: 0;
+            animation-name: style-header;
+            animation-timeline: scroll(root block);
+        }
+            .container-logo:active{
+                transform: scale(120%);
+            }
+            .container-logo img{
+                width: 10%;
+            }
+            .container-navegation{
+                position: sticky;
+                z-index: 2000;   
+                top:13.6%;
+                animation-name: style-header;
+            animation-timeline: scroll(root block);
+            }
+        /*Animaciones para ewkl scroll o barra de carga*/
+        .lineTemp{
+           background-color: brown;
+           
+           height: 1vh; 
+           margin: 0;
+           position: sticky;
+           z-index: 3000;
+           top:0;
+            animation-name: scrollTimeLine;
+            animation-duration: auto; /*auto  lo pinemos porque la barra no va por tiempo sino por donde baje el scroll*/
+            animation-timing-function: linear;
+            animation-timeline: scroll(root block);
+
+          
+        }
+        @keyframes scrollTimeLine {  /*Sencillo para el scroll*/
+            from{
+                width: 0%;
+            }
+            to{
+                width: 100%;
+            }
+        }
+        @keyframes style-header{
+            to{
+                background-color: rgba(255, 255, 200, .4);
+                backdrop-filter:blur(5px);
+                color: black;
+            }
+        }
+        
+      
+     
+            .firstList{
+               display: flex;
+              justify-content: center;
+
                
+                width: auto;
+                
+                
+            }
+                .firstList li{
+                   display: inline-block;
+                    list-style: none;
+                    margin: 4vh;
+                   
+                   
                  
- 
-             }
-             
-                 
+                   
+                  
+                    
+                }
+                   
+                        .firstList a {
+                            color:brown;
+                            text-decoration: none;
+                            
+                        }
+                        .gold a{
+                            color: gold;
+                           
+                        }
+                    .firstList li:hover{
+                        background-color: blue;
+                       
+                    }
+                    .routeToledo{
+                        width: 13%;
+                        
+                    }
+                        .arrow{
+                            width: 5%;
+                            transform: rotate(0deg);
+                            transition: transform 0.5s linear;
+                        }
+                    .routeToledo .arrow:hover{
+                        transform: rotate(90deg);
+                    }
+            .sublist{
+                margin-top: 0%;
+                display: grid;
                
+                grid-template-rows: subgrid;
+                grid-template-columns: repeat(4,1fr);
+                grid-row: span 4;
+                row-gap: 2%;
+                column-gap: 3%;
+                width: 60%;
+                height: 10%;
+               
+               top:-500%;
+                /* display: none; */
+               
+                position: absolute;
+                margin-left: -60%;
+              transition: margin-left 2s  ;
+              z-index: 4000;
+              color: brown;
+                
+            
+            }
+                .sublist2{
+                    display: grid;
+                    grid-template-rows:subgrid;
+                    grid-row: span 2;
+                    margin-top: 1%;
+                  
+                    position: absolute; /*hace que separe la ul de la il */
+                    top: -500px;
+                    margin-left: -60%;
+                    transition: margin-left 2s;
+                    z-index: 4000;
+                }
+                    .firstList li:hover > .sublist2{
+                        
+                        background-color: beige;
+                        top: 6vh;
+                        margin-left: 0%;
+                        
+                    }
+                        .sublist2 li{
+                            height: 10vh;
+                        }
+                            .sublist2 li:hover{
+                                background-color: whitesmoke;
+                            }
+                        .sublist2 a{
+                            font-size: medium;
+                        }
+                
+                .sublist li{
+                    background-color: whitesmoke;
+                   
+                }
+           
+                .sublist li:hover{
+                   
+                    background-color:gray ;
+
+                }
+            .firstList li:hover> .sublist{ /*Recordatorio cerrar bien las listas y revidsar que la la il a leegir para sublista debe englobbar la nueva sublista*/
+                display: block;
+               
+                display: grid;
+               
+                grid-template-rows: subgrid;
+                grid-template-columns: repeat(4,1fr);
+                grid-row: span 4;
+                
+                width: 60%;
+                height: auto;
+                
+                background-color: beige;
+                top: auto;
+                margin-left: -22%;
+
+            }
+            
+            .container-bigImage{
+                background-size: cover;
+                background-position: center;
+                
+               
+            }
+                .container-bigImage img{
+                    width: 100%;
+                    height: 60vh;
+                    object-fit: cover;
+                    
+                }
               
-.container-bigImage{
-    width: 100%;
-    
-}
-    
-    .container-bigImage img{
-        width: 100%;
-        height: 70vh;
-        object-fit: cover;
-}
-    
+           
     
 .subFather{
     background-color:white;
@@ -153,6 +254,7 @@ html,body{
         display: flex;
         justify-content:space-evenly;
         margin-left: 40vh;
+       
     }
     
         .container-text p{
