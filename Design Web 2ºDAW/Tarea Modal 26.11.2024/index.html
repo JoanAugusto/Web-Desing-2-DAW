@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practica Modal</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+     <header id="header" class="header"><!-- este header funciona como contenedor para el especie de boton que posterioremnete funcionaria para desplegar el modal desde arriba -->
+        <a href="#modal" class="cta">Dame click</a>
+    </header>
+
+
+    <section id="modal" class="modal">
+        <div class="modal__conatiner">
+            <figure class="modal__picture">
+                <img  class="modal__img" src="./images/ilustartion.svg" alt="imagen">
+            </figure>
+
+            <h2 class="modal__title">
+                ¡Good Job!
+                <span class="modal__title modal__title--bold">
+                    Joan
+                </span>
+            </h2>
+
+            <p class="modal__paragraph">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque ratione eos dolores architecto hic assumenda consequuntur culpa voluptatum in officia!
+            </p>
+            <a href="#header" class="modal__close">Estoy de acuerdo</a>
+        </div>
+    </section>
+</body>
+</html>

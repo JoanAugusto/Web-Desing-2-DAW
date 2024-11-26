@@ -1,0 +1,130 @@
+/*estilos generales e imports de google fonts para estilos en letras*/
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;1,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital@0;1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,500;1,500&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,700;1,700&display=swap');
+/*para todos los elementos*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Montserrat',sans-serif;
+}
+
+.header{
+    display: flex;
+    height: 100vh;
+    width: 100%;
+}
+
+    .cta{
+        margin: auto;
+        background-color: royalblue;
+        color: white;
+        text-decoration: none;
+        padding: 1.23em 3em;
+        border-radius: .4em;
+    }
+        .modal{
+            position: fixed;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background-color:  #333;
+            display: flex;
+            --opacity:0;
+            --pointer:none;
+            opacity: var(--opacity);/*Con esta custom properties lo qu hacemos es decirle que desaparezca de la pantlla pero como el modal estaba encima del botn es decir superponiendose por lo que es imposile dar al boton*/
+            pointer-events: var(--pointer);/*Para eso usamos esto hara que es invisible y por lo que el mouse no lo reconocerá */
+            transition: opacity .5s;
+        }
+            .modal:target{
+                --opacity:1;
+                --pointer:unset;
+            }
+            .modal__conatiner{
+                margin: auto;
+                background-color: #fff;
+                width: 90%;
+                max-width: 600px;
+                max-height: 90%;
+                overflow: hidden;
+                text-align: center;
+                padding: 2.5em 1.5em;
+                border-radius: 1em;
+            }
+                .modal:target .modal__conatiner{
+                    animation: show 1s;
+                }
+                @keyframes show {
+                    0%{
+                        transform:translateY(-150vh);
+                    }
+                    100%{
+                        transform: translateY(0);
+                    }
+                }
+                .modal__picture{
+                    width: 90%;
+                    margin: 0 auto;
+                    max-width: 400px;
+                    margin-bottom: 2em;
+
+                 
+                    
+                }
+                    .modal:target .modal__picture{/*Se debe poner las animaciones cuaod se haga taregte en este caso*/ 
+                        animation: move-img  0.5s 1s backwards ;
+                    }
+                    @keyframes move-img {
+                        0%{
+                            transform: scale(0);
+                        }
+                        100%{
+                            transform: scale(100%);
+                        }
+                    }
+                .modal__img{
+                    width: 100%;
+                    display: block;
+                   
+                }
+                    .modal__title{
+                        font-size: 2.5rem;
+                        font-weight: 500;
+                    }
+                        .modal__title--bold{
+                            font-weight: 700;
+                        }
+                    .modal__paragraph{
+                        margin-top: 1em;
+                        margin-bottom: 1em;
+                        line-height: 1.5;
+                    }
+
+                    .modal__close{
+                        display: inline-block;
+                        border: 1px solid ;
+                        padding: 1em 2em;
+                        text-decoration: none;
+                        font-weight: 700;
+                        color: #333;
+                        border-radius: .4em;
+                    }
+
+/*Media Queries*/
+
+@media all and (max-width:600px){
+    .modal__title{
+        font-size: 1.7rem;
+    }
+    .modal__title--bold{
+        font-size: 1.7rem;
+    }
+}
