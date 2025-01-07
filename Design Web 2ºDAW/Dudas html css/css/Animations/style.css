@@ -2,17 +2,20 @@ body{
     background: #233;
 }
 .box{
+    transform:scale(20%);
     width: 300px;
     height: 300px;
     border: 4px solid white;
+    margin-left: 30%;
+    transition: width 2s,margin-left 2s,transform 2s;
   
     animation-name: example;/*Indicamos el nombre de nuestra regla @keyframes para usar la animacion que necesitamos*/
-    animation-duration: 5s;/*tambien podemos indicar el tiempoo de duracion de la animacion si no indicamos la duracion de la animacion sera de 0s es decir no hara nada
+    animation-duration:auto;/*tambien podemos indicar el tiempoo de duracion de la animacion si no indicamos la duracion de la animacion sera de 0s es decir no hara nada
                                 cuando acabe el tiempo de animacion volverá a su estado original del div, en este caso no establecimos ningun color'  */
-    animation-delay: 2s;/* esta propiedad lo que hace es que antes de comenzar la animacion tenga un retraso o espera de 2s y ya de ahi comienza la animacion 
+    animation-delay: 3s;/* esta propiedad lo que hace es que antes de comenzar la animacion tenga un retraso o espera de 2s y ya de ahi comienza la animacion 
                         se puede usar numeros negativos*/
     animation-iteration-count:infinite;/*Especificamos cuantas veces se repetirá la animacion aunque tenemos (infinite:bucle infinito,) */
-    animation-direction: alternate;/*Especificamos que direccion tomará o el orden que debe ejecutarse en predeterminado estará en normal , tambien podemois usar
+    animation-direction:reverse;/*Especificamos que direccion tomará o el orden que debe ejecutarse en predeterminado estará en normal , tambien podemois usar
                                     reverse que irá desde el final es decir desde el 100% hasta el 0% ,alternate que lo que hará es ejecutará normal y despues que termine
                                         usará reverse pero será infinito y alternate-reverse pues akltenado hacia delante yu atras pero empezara desde el 100%.*/
     animation-timing-function: linear; /*indica la curva de velocidad es mas es como si fuera ekl transition que poidiamos deirle que tipo de velovidad queriamos
@@ -28,8 +31,13 @@ body{
                                 forwards- El elemento conservará los valores de estilo establecidos por el último fotograma clave (depende de la dirección de la animación y del número de iteraciones de la animación)
                                 backwards- El elemento obtendrá los valores de estilo establecidos por el primer fotograma clave (depende de la dirección de la animación) y los conservará durante el período de retraso de la animación.
                                 both- La animación seguirá las reglas tanto hacia adelante como hacia atrás, extendiendo las propiedades de animación en ambas direcciones.*/
-
+    
 }
+    .box:hover{
+        margin-left: 35%;
+        width: 600px;
+        transform: scale(100%);
+    }
 @keyframes example {
     /* from{
        background-color: indigo;
@@ -44,12 +52,14 @@ body{
     }
     25%{
         background-color: aqua;
+        
     }
     50%{
         background-color: chartreuse;
     }
     100%{
         background-color: darkcyan;
+        
     }
 }
 /* @keyframes	Specifies the animation code
