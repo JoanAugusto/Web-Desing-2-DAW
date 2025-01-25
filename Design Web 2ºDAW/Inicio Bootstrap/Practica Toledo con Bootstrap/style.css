@@ -2,7 +2,9 @@
     width: 10%;
     
 }
+
     .secondMenu{
+        
         margin-left:-50%;
        
         visibility: hidden;
@@ -10,13 +12,19 @@
      
        transition: margin-left 0.6s;
     }
+        .secondMenu li{
+            align-self: center;
+            justify-self: center;
+        }
 
     .firstMenu li:hover >.secondMenu{
+        
         visibility: visible;
        
         width: 100%;
         height: 40vh;
-        background-color: bisque;
+        border: 1px solid rgba(0,0,0,0.03);
+        background-color: #fff;
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr;
         column-gap: 2%;
@@ -26,13 +34,13 @@
         pointer-events: visible;
         margin-left:-25%;
         margin-top:0.6%;
-        
+        z-index: 50;
 
 
     }
 
 .thirdMenu{
-    background-color:bisque;
+    background-color:#fff;
     visibility: hidden;
     pointer-events: none;
     margin-left:-20%;
@@ -43,6 +51,7 @@
         justify-self: center;
     }
         .firstMenu li:hover > .thirdMenu{
+            
             visibility: visible;
             pointer-events: visible;
             display: grid;
@@ -53,6 +62,39 @@
             list-style: none;
             margin-left: -5%;
             margin-top: 0.6%;
+            z-index: 50;
+            border: 1px solid rgba(0,0,0,0.03);
         }
 
+/*Imagenes del Carrousel*/
 
+.imgCarousel{
+    height: 66vh;
+    object-position: center;
+    object-fit: cover;
+}
+/*Colores de letra*/
+
+.dorado{
+    color:#aa8447;
+}
+.marronRojizo{
+    color:#c4000d; 
+}
+/*Text down of imageBig*/
+
+.sizeDivtext{
+    width: 100%;
+    height:40vh;
+} 
+
+/*Arreglo de tamaño de la imagen*/
+
+.fixSizeImage{
+    width: 100%;
+    opacity: 100%;
+    transition: opacity 0.2s linear;
+}
+    .fixSizeImage:hover{
+        opacity: 50%;
+    }
