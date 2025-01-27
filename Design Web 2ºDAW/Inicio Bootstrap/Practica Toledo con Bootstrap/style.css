@@ -81,6 +81,13 @@
 .marronRojizo{
     color:#c4000d; 
 }
+/*Colores para el Formulario*/
+.rojoVino{
+    color:#800000;
+}
+.gris{
+    color:#666;
+}
 /*Text down of imageBig*/
 
 .sizeDivtext{
@@ -171,3 +178,12 @@
     .sizeInput{
         height: 20vh;
     }
+
+    /*Cambiar tamanaño textarea*/
+.textArea{
+    height: 100vh;
+}
+.styleAForm{
+    text-decoration: none;
+    color: #800000;
+}
