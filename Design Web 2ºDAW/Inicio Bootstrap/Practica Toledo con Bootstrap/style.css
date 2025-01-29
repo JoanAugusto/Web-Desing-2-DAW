@@ -108,16 +108,19 @@
 
 /*Arreglo en tamaño de imagen en IG*/
 .fixIGImage{
-    width: 50%;
+    width: 100%;
     object-fit: cover;
 }
     .transformCircle{
-        width: 30%;
-        clip-path: circle(20%);
+        width: 20%;
+        clip-path: circle(30%);
         display: flex;
         justify-content: center;
         
         
+    }
+    .stylep{
+        font-size: 1.7vh;
     }
 /*imagenes video grid*/
 
@@ -187,3 +190,21 @@
     text-decoration: none;
     color: #800000;
 }
+
+    /*Arreglo imagenes*/
+    .fixIGImage2{
+        width:10vh;
+        
+        object-fit: cover;
+    }
+
+    /*arreglo de imagenes en otro sitio */
+
+    .fixInicio{
+        width: 5vh;
+    }
+    .height{
+        height: 40vh;
+    }
+    /*Icons prinicpal*/
+    
