@@ -6,16 +6,25 @@
     <title>Toledo con Bootstrap</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./responsive.css">
 </head>
 <body class="w-100 h-100">
 <header class="w-100 h-100"> 
-       <nav class="navbar navbar-expand  d-flex flex-column p-0 " >
-        <div class="  container-fluid  d-flex justify-content-center ">
-            <img class=" logoToledo" src="./images/logo-toledo-3-culturas-300.png" alt="">
+       <nav class="navbar  navbar-expand   d-flex flex-column p-0  " >
+        <div class="container-fluid d-flex justify-content-center">
+            <img class="logoToledo" src="./images/logo-toledo-3-culturas-300.png" alt="">
         </div>
-
-            <div class="container-fluid  collapse navbar-collapse d-flex justify-content-center" id="navbar">
-                <ul class="navbar-nav position-relative firstMenu ">
+        <div class="container-fluid collapse navbar-collapse  d-flex justify-content-between responsiveMenu">
+            <p class="marronRojizo fs-6">Seleccionar página</p>
+            <button class="btn btn-primary" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+                <img src="./imagesIcons/menu_24dp_800000_FILL0_wght400_GRAD0_opsz24.svg" alt="">
+            </button>
+            
+        </div>
+       
+    
+            <div class="container-fluid  collapse navbar-collapse d-flex justify-content-center hiddenResponsive" id="navbar">
+                <ul class="navbar-nav position-relative firstMenu d-flex flex-wrap ">
                     <li class="nav-item p-2 dorado" type="button">Inicio </li>
                     <li class="nav-item p-2  marronRojizo" type="button" >Quiénes somos</li>
                     <li class="nav-item p-2 marronRojizo" type="button" >Nuestras rutas por Toledo <img src="./images/caret-down-fill.svg" alt="">
@@ -50,11 +59,39 @@
                     </li>
                     <li class="nav-item p-2 marronRojizo" type="button"  >Regala una ruta</li>
                     <li class="nav-item p-2 marronRojizo" type="button" ><a class="quitStyletag marronRojizo" href="./contacto.html">Contacto</a></li>
-                    <li class="nav-item p-2 marronRojizo" type="button" >Blog</li>
-                    <li class="nav-item p-2 " type="button" ><img class="marronRojizo " src="./images/search.svg" alt=""></li>
+                    <li class="nav-item p-2 marronRojizo " type="button" >Blog</li>
+                    <li class="nav-item p-2  " type="button" ><img class="marronRojizo " src="./images/search.svg" alt=""></li>
                 </ul>
             </div>
     </nav>
+    <div class="collapse " id="collapseExample">
+        <div class="card card-body">
+            <ul class="navbar-nav position-relative firstMenu d-flex flex-column flex-wrap visibleResponsive z-3">
+                <li class="nav-item p-2 dorado">Inicio</li>
+                <li class="nav-item p-2 marronRojizo">Quiénes somos</li>
+                <li class="nav-item p-2 marronRojizo">
+                    Nuestras rutas por Toledo <img src="./images/caret-down-fill.svg" alt="">
+                    <ul class="secondMenu position-absolute">
+                        <li><a class="quitStyletag marronRojizo" href="./vida.html">Vida en la judería de Toledo</a></li>
+                        <li>RUTA NOCHE TOLEDANA</li>
+                        <li>Plazas desconocidas de Toledo</li>
+                        <li>Ruta Toledo 3 Culturas</li>
+                    </ul>
+                </li>
+                <li class="nav-item p-2 marronRojizo">Rutas privadas <img src="./images/caret-down-fill.svg" alt="">
+                    <ul class="thirdMenu position-absolute">
+                        <li>Rutas para grupos</li>
+                        <li>Rutas para colegios y <br>centros docentes</li>
+                    </ul>
+                </li>
+                <li class="nav-item p-2 marronRojizo">Regala una ruta</li>
+                <li class="nav-item p-2 marronRojizo"><a class="quitStyletag marronRojizo" href="./contacto.html">Contacto</a></li>
+                <li class="nav-item p-2 marronRojizo">Blog</li>
+                <li class="nav-item p-2"><img class="marronRojizo" src="./images/search.svg" alt=""></li>
+            </ul>
+        </div>
+    </div>
+     <hr class="hr">
 
         <div id="carouselExampleIndicators" class="carousel slide">
             <div class="carousel-indicators">
@@ -106,15 +143,15 @@
 
 </header>
  
-    <div class="container-fluid  sizeDivtext ">
+    <div class="container-fluid container-lg container-md container-sm sizeDivtext mt-5 ">
         <div class="container-fluid w-100 h-100 d-flex flex-column align-items-center justify-content-center">
 
-            <p class="dorado fs-4 " >
+            <p class="dorado fs-4 mt-5 container-lg " >
                 Toledo,declarada Patrimonio de la Humanidad en 1986, abrazó durante  siglos la convivencia de la <br>
                 cultura judía , musulmana y cristiana.Denominada "La ciudad de las tres culturas", respira una mezcla de <br>
                 estilos, de tiempos y de gentes que la hae una de las ciudades más atractivas para visitar 
             </p>
-            <p class="dorado fs-4">
+            <p class="dorado fs-4 m-0 mb-5 container-lg container-md">
                 <b>
                     Elige entre las rutas que te proponemos y ven a disfrutar de Toledo
                 </b>
@@ -122,61 +159,61 @@
         </div>
     </div>
 
-            <div class="container-fluid  w-100 h-100 p-0">
-                <div class="container-fluid  w-100 d-flex justify-content-center mb-4">
+            <div class="container-fluid  container-lg w-100 h-100 p-0 mt-5">
+                <div class="container-fluid container-lg container-md  w-100 d-flex justify-content-center mb-4">
                     <b class="dorado fs-3 text-uppercase">Las rutas de toledo 3 culturas</b>
                 </div>
-                    <div class="container-fluid d-grid w-75 ">
+                    <div class="container-fluid container-lg container-md d-grid w-75 ">
                         <div class="row row-gap-1">
                             <div class="col-3 column-gap-1  " >
-                                <div class="container-fluid">
+                                <div class="container-fluid container-lg container-md container-sm">
                                     <img class="fixSizeImage" src="./images/imagesGrid/arcosangre1940-400x400.jpg" alt="">
                                     <p class="dorado fs-6">Ruta Toledo 3 Culturas</p>
                                     <p class="dorado">12,00€ <sub class="gris ">persona</sub></p>
                                         <div class="container-fluid w-100 d-flex  ">
                                             <img class="mb-3" src="./imagesIcons/clock.svg" alt="">
-                                            <p class="gris  ">2 horas</p>
+                                            <p class="gris fixsizeText ">2 horas</p>
                                             <img class="mb-3" src="./imagesIcons/send_24dp_800000_FILL0_wght400_GRAD0_opsz24.svg" alt="">
-                                            paseo a pie        
+                                           <p class="gris fixsizeText"> paseo a pie </p>       
                                         </div>
                                 </div>
                             </div>
                             <div class="col-3 column-gap-1  " >
-                                <div class="container-fluid">
+                                <div class="container-fluid container-lg container-md container-sm">
                                     <img class="fixSizeImage" src="./images/imagesGrid/arcosangre1940-400x400.jpg" alt="">
                                     <p class="dorado fs-6">Ruta Toledo 3 Culturas</p>
                                     <p class="dorado">12,00€ <sub class="gris ">persona</sub></p>
                                         <div class="container-fluid w-100 d-flex  ">
                                             <img class="mb-3" src="./imagesIcons/clock.svg" alt="">
-                                            <p class="gris  ">2 horas</p>
+                                            <p class="gris fixsizeText  ">2 horas</p>
                                             <img class="mb-3" src="./imagesIcons/send_24dp_800000_FILL0_wght400_GRAD0_opsz24.svg" alt="">
-                                            paseo a pie        
+                                            <p class="gris fixsizeText"> paseo a pie </p>           
                                         </div>
                                 </div>
                             </div>
                             <div class="col-3 column-gap-1  " >
-                                <div class="container-fluid">
+                                <div class="container-fluid container-lg container-md container-sm">
                                     <img class="fixSizeImage" src="./images/imagesGrid/arcosangre1940-400x400.jpg" alt="">
                                     <p class="dorado fs-6">Ruta Toledo 3 Culturas</p>
                                     <p class="dorado">12,00€ <sub class="gris ">persona</sub></p>
                                         <div class="container-fluid w-100 d-flex  ">
                                             <img class="mb-3" src="./imagesIcons/clock.svg" alt="">
-                                            <p class="gris  ">2 horas</p>
+                                            <p class="gris fixsizeText  ">2 horas</p>
                                             <img class="mb-3" src="./imagesIcons/send_24dp_800000_FILL0_wght400_GRAD0_opsz24.svg" alt="">
-                                            paseo a pie        
+                                            <p class="gris fixsizeText"> paseo a pie </p>            
                                         </div>
                                 </div>
                             </div>
                             <div class="col-3 column-gap-1  " >
-                                <div class="container-fluid">
+                                <div class="container-fluid container-lg container-md container-sm">
                                     <img class="fixSizeImage" src="./images/imagesGrid/arcosangre1940-400x400.jpg" alt="">
                                     <p class="dorado fs-6">Ruta Toledo 3 Culturas</p>
                                     <p class="dorado">12,00€ <sub class="gris ">persona</sub></p>
                                         <div class="container-fluid w-100 d-flex  ">
                                             <img class="mb-3" src="./imagesIcons/clock.svg" alt="">
-                                            <p class="gris  ">2 horas</p>
+                                            <p class="gris fixsizeText ">2 horas</p>
                                             <img class="mb-3" src="./imagesIcons/send_24dp_800000_FILL0_wght400_GRAD0_opsz24.svg" alt="">
-                                            paseo a pie        
+                                            <p class="gris fixsizeText"> paseo a pie </p>            
                                         </div>
                                 </div>
                             </div>
@@ -185,54 +222,54 @@
 
                                     <div class="row row-gap-1">
                                         <div class="col-3 column-gap-1  " >
-                                            <div class="container-fluid">
+                                            <div class="container-fluid container-lg container-md container-sm">
                                                 <img class="fixSizeImage" src="./images/imagesGrid/arcosangre1940-400x400.jpg" alt="">
                                                 <p class="dorado fs-6">Ruta Toledo 3 Culturas</p>
                                                 <p class="dorado">12,00€ <sub class="gris ">persona</sub></p>
                                                     <div class="container-fluid w-100 d-flex  ">
                                                         <img class="mb-3" src="./imagesIcons/clock.svg" alt="">
-                                                        <p class="gris  ">2 horas</p>
+                                                        <p class="gris fixsizeText  ">2 horas</p>
                                                         <img class="mb-3" src="./imagesIcons/send_24dp_800000_FILL0_wght400_GRAD0_opsz24.svg" alt="">
-                                                        paseo a pie        
+                                                        <p class="gris fixsizeText"> paseo a pie </p>           
                                                     </div>
                                             </div>
                                         </div>
                                         <div class="col-3 column-gap-1  " >
-                                            <div class="container-fluid">
+                                            <div class="container-fluid container-lg container-md container-sm">
                                                 <img class="fixSizeImage" src="./images/imagesGrid/arcosangre1940-400x400.jpg" alt="">
                                                 <p class="dorado fs-6">Ruta Toledo 3 Culturas</p>
                                                 <p class="dorado">12,00€ <sub class="gris ">persona</sub></p>
                                                     <div class="container-fluid w-100 d-flex  ">
                                                         <img class="mb-3" src="./imagesIcons/clock.svg" alt="">
-                                                        <p class="gris  ">2 horas</p>
+                                                        <p class="gris fixsizeText ">2 horas</p>
                                                         <img class="mb-3" src="./imagesIcons/send_24dp_800000_FILL0_wght400_GRAD0_opsz24.svg" alt="">
-                                                        paseo a pie        
+                                                        <p class="gris fixsizeText"> paseo a pie </p>            
                                                     </div>
                                             </div>
                                         </div>
                                         <div class="col-3 column-gap-1  " >
-                                            <div class="container-fluid">
+                                            <div class="container-fluid container-lg container-md container-sm">
                                                 <img class="fixSizeImage" src="./images/imagesGrid/arcosangre1940-400x400.jpg" alt="">
                                                 <p class="dorado fs-6">Ruta Toledo 3 Culturas</p>
                                                 <p class="dorado">12,00€ <sub class="gris ">persona</sub></p>
                                                     <div class="container-fluid w-100 d-flex  ">
                                                         <img class="mb-3" src="./imagesIcons/clock.svg" alt="">
-                                                        <p class="gris  ">2 horas</p>
+                                                        <p class="gris fs-5 fixsizeText  ">2 horas</p>
                                                         <img class="mb-3" src="./imagesIcons/send_24dp_800000_FILL0_wght400_GRAD0_opsz24.svg" alt="">
-                                                        paseo a pie        
+                                                        <p class="gris fixsizeText"> paseo a pie </p>            
                                                     </div>
                                             </div>
                                         </div>
                                         <div class="col-3 column-gap-1  " >
-                                            <div class="container-fluid">
+                                            <div class="container-fluid container-lg container-md container-sm">
                                                 <img class="fixSizeImage" src="./images/imagesGrid/arcosangre1940-400x400.jpg" alt="">
                                                 <p class="dorado fs-6">Ruta Toledo 3 Culturas</p>
                                                 <p class="dorado">12,00€ <sub class="gris ">persona</sub></p>
                                                     <div class="container-fluid w-100 d-flex  ">
                                                         <img class="mb-3" src="./imagesIcons/clock.svg" alt="">
-                                                        <p class="gris  ">2 horas</p>
+                                                        <p class="gris fixsizeText ">2 horas</p>
                                                         <img class="mb-3" src="./imagesIcons/send_24dp_800000_FILL0_wght400_GRAD0_opsz24.svg" alt="">
-                                                        paseo a pie        
+                                                        <p class="gris fixsizeText"> paseo a pie </p>            
                                                     </div>
                                             </div>
                                         </div>
@@ -241,15 +278,15 @@
                        
             </div>
 
-                    <div class="container-fluid w-75 mt-5 mb-5">
-                            <div class="container-fluid d-flex flex-grow-1 mb-4   ">
+                    <div class="container-fluid container-lg container-md container-sm w-75 mt-5 mb-5">
+                            <div class="container-fluid container-lg container-md container-sm d-flex flex-grow-1 mb-4   ">
                                 <div class="container-fluid transformCircle ">
                                     <img class="fixIGImage object-fit-cover " src="./images/logo-toledo-3-culturas-300 (1).png" alt="">
                                 </div>
                                 
-                                    <div class="container-fluid  d-flex flex-column w-100">
+                                    <div class="container-fluid container-lg container-md container-sm  d-flex flex-column w-100">
                                         <p class="dorado fs-5">toledo3culturas</p>
-                                            <div class="container-fluid d-flex justify-content-start  ">
+                                            <div class="container-fluid container-lg container-md container-sm d-flex justify-content-start  ">
                                                 <p class="dorado stylep  ">🙍‍♂️#Guíaoficiales de turismo</p>
                                                 <p class="dorado stylep">🚩Rutas y #visitasguiadas</p>
                                                 <p class="dorado stylep">👩‍👦‍👦 En grupo o individuales</p>
@@ -263,8 +300,8 @@
                             
                             </div>
 
-                                <div class="container-fluid d-grid  w-100">
-                                    <div class="container-fluid d-grid">
+                                <div class="container-fluid container-lg container-md container-sm d-grid  w-100">
+                                    <div class="container-fluid container-lg container-md container-sm d-grid">
                                         <div class="row mb-3 ">
                                             <div class="col-3 h-75">
                                                 <a href="https://www.youtube.com/"> <img class="sizeImageGrid object-fit-cover  " src="./images/imagesVideo//473377295_1801538994017348_9169275242204360582_nlow.webp" alt=""></a>
@@ -303,18 +340,18 @@
                                     </div>
                                 </div>
                         
-                            <div class="container-fluid mt-3 d-flex justify-content-center">
+                            <div class="container-fluid container-lg container-md container-sm mt-3 d-flex justify-content-center">
                                 <button class="btn btn-dark me-2" type="button">Cargar más</button>
                                 <button class="btn btn-primary" type="button"><img   src="./images/instagram.svg" alt=""> Seguir en Instagram</button>
                             </div>
                     </div>
 
-    <div class="container-fluid bg-primary d-flex justify-content-center align-items-center divButton mt-5">
+    <div class="container-fluid container-lg container-md container-sm bg-primary d-flex justify-content-center align-items-center divButton mt-5">
         <button class="btn  colorButton">Consulte nuestras visitas diarias y reserve ahora</button>
     </div>
 
 
-    <div class="container-fluid w-100 d-flex flex-column align-items-center colorDivImg ">
+    <div class="container-fluid container-lg container-md container-sm w-100 d-flex flex-column align-items-center colorDivImg ">
 
         <img class="mt-5 w-75 " src="./images/perfil-toledo.jpg" alt="">
 
@@ -323,22 +360,22 @@
 
     </div>
 
-            <div class="container-fluid d-flex justify-content-center w-75 mt-5">
-                <div class="container-fluid d-flex flex-column align-items-center">
+            <div class="container-fluid container-lg container-md container-sm d-flex justify-content-center w-75 mt-5">
+                <div class="container-fluid container-lg container-md container-sm d-flex flex-column align-items-center">
                     <img src="./images/Imagen-Alojamiento.jpg" alt="">
                     <p class="dorado fs-6">Alojamiento </p>
                 </div>
-                    <div class="container-fluid d-flex flex-column align-items-center ">
+                    <div class="container-fluid container-lg container-md container-sm d-flex flex-column align-items-center ">
                         <img src="./images/Imagen-restaurante.jpg" alt="">
                         <p class="dorado fs-6">Restaurantes</p>
                     </div >
-                        <div class="container-fluid d-flex flex-column align-items-center">
+                        <div class="container-fluid container-lg container-md container-sm d-flex flex-column align-items-center">
                             <img src="./images/Imagen-actividades.jpg" alt="">
                             <p class="dorado fs-6">Actividades</p>
                         </div>
             </div>
 
-            <div class="container-fluid w-75 mt-5 text-secondary fs-6">
+            <div class="container-fluid container-lg container-md container-sm w-75 mt-5 text-secondary fs-6">
                 <p>
                     Toledo 3 Culturas se limita a ofrecer información general sobre alojamiento, restaurantes y actividades en Toledo.
                      De ninguna manera se responsabiliza de la satisfacción de los clientes que contraten alguno de estos servicios en Toledo.
@@ -346,20 +383,20 @@
                 </p>
             </div>
 
-            <div class="container-fluid w-75 mt-5">
-                <div class="container-fluid d-flex flex-grow-1 mb-4   ">
-                    <div class="container-fluid transformCircle">
+            <div class="container-fluid container-lg container-md container-sm w-75 mt-5">
+                <div class="container-fluid container-lg container-md container-sm d-flex flex-grow-1 mb-4   ">
+                    <div class="container-fluid container-lg container-md container-sm transformCircle">
                         <img class="fixIGImage object-fit-cover " src="./images/_000ri0Zn4a2-qt_v_SlKNZr2zz6u9crBW-t-thumbnail.webp" alt="">
                     </div>
                     
-                        <div class="container-fluid  d-flex flex-row justify-content-between  ">
+                        <div class="container-fluid container-lg container-md container-sm  d-flex flex-row justify-content-between  ">
                            
-                                <div class="container-fluid d-flex align-items-center ">
+                                <div class="container-fluid container-lg container-md container-sm d-flex align-items-center ">
                                     <p><b>Toledo3Culturas</b></p>
                                     <p>@toledo3culturas</p>
                                    
                                 </div>
-                                        <div class="container-fluid w-100 d-flex flex-row justify-content-end align-items-center">
+                                        <div class="container-fluid container-lg container-md container-sm w-100 d-flex flex-row justify-content-end align-items-center">
                                             <button class="btn btn-danger h-25 d-flex align-items-center">Seguir en Tiktok</button>
                                         </div>
 
@@ -369,8 +406,8 @@
                 </div>
 
 
-            <div class="container-fluid d-grid  w-100">
-                <div class="container-fluid d-grid">
+            <div class="container-fluid container-lg container-md container-sm d-grid  w-100">
+                <div class="container-fluid container-lg container-md container-sm d-grid">
                     <div class="row mb-3 ">
                         <div class="col-3">
                             <a href="https://www.youtube.com/"> <img class="sizeImageGrid2 object-fit-cover " src="./images/imagesVideo//473377295_1801538994017348_9169275242204360582_nlow.webp" alt=""></a>
@@ -410,19 +447,19 @@
             </div>
         </div>
 
-        <div class="container-fluid w-75 mt-5 ">
+        <div class="container-fluid container-lg container-md container-sm w-75 mt-5 ">
             <p class="fs-5 text-center dorado">
                 Exprese en el siguiente formulario sus sugerencias para la mejora del servicio que ofrece <br> Toledo 3 Culturas. Así mismo, también podrá indicar las quejas que tuviera. Será <br> contestado en el menor espacio de tiempo.
             </p>
         </div>
 
-        <div class="container w-75 mb-5 ">
+        <div class="container container-lg container-md container-sm w-75 mb-5 ">
 
-            <div class="container-fluid imageOutline d-flex flex-row align-items-center justify-content-center ">
-                    <button class="btn btn-outline-light h-25 w-25"><a class="quitStyletag" href="./contacto.html">!Te Escuchamos¡</a></button>
+            <div class="container-fluid container-lg container-md container-sm imageOutline d-flex flex-row align-items-center justify-content-center ">
+                    <button class="btn btn-outline-light h-25 w-25"><a class="quitStyletag text-white" href="./contacto.html">¡Te Escuchamos!</a></button>
             </div>
 
-                    <div class="container-fluid  mt-5">
+                    <div class="container-fluid container-lg container-md container-sm  mt-5">
                         <p class="text-secondary fs-6">
                             Los datos que usted aporte son confidenciales y sólo para uso informativo de Toledo 3 Culturas. Quedan bajo la protección de lo estipulado en la Ley Orgánica 3/2018, de 5 de diciembre, de Protección de Datos Personales y garantía de los derechos digitales y la legislación que modifica dicha Ley.
                         </p>
@@ -430,12 +467,12 @@
         </div>
 
 
-            <footer class="container-fluid w-100 bg-dark d-flex justify-content-center ">
-                <div class="container-fluid d-flex flex-row justify-content-center w-75">
+            <footer class="container-fluid  w-100 bg-dark d-flex justify-content-center ">
+                <div class="container-fluid container-lg container-md container-sm d-flex flex-row justify-content-center w-75">
 
                 
-                            <div class="container ">
-                                <div class="container ">
+                            <div class="container container-lg container-md container-sm ">
+                                <div class="container container-lg container-md container-sm ">
                                     <p class="dorado fs-6">Enlaces de Interés:</p>
                                     <p class="text-light fs-6">Templarios, instrumentos de tortura,</p>
                                     <p class="text-light fs-6">mazmorras</p>
@@ -448,21 +485,21 @@
                                             <img src="./images/Logo-SICTED-ES-EN-alargado-510x210.jpg" alt="">
                                         </div>
                             </div>
-                                    <div class="container-fluid ">
-                                        <div class="container-fluid">
+                                    <div class="container-fluid container-lg container-md container-sm ">
+                                        <div class="container-fluid container-lg container-md container-sm">
                                             <p class="dorado fs-6">Buscate una ruta:</p>
-                                                <div class="container-fluid d-flex flex-row ">
+                                                <div class="container-fluid container-lg container-md container-sm d-flex flex-row ">
                                                     <input type="text" class="form-control sizeButton">
                                                     <button class="btn btn-light">Buscar</button>
                                                 </div>
                                         </div>
-                                        <div class="container-fluid ">
+                                        <div class="container-fluid container-lg container-md container-sm ">
                                             <p class="dorado">Reserva en:</p>
                                             <p class="text-light">603 420 820</p>
                                             <p class="text-light">info@toledo3culturas.com</p>
                                         </div>
                                     </div>
-                                            <div class="container-fluid">
+                                            <div class="container-fluid container-lg container-md container-sm">
                                                 <p class="dorado">Otros Enlaces</p>
                                                 <ul>
                                                     <li class="text-light">Forma de pago</li>
@@ -472,11 +509,11 @@
                                                     <li class="text-light">Encuesta de Satisfacción</li>
                                                     <li class="text-light">Política de cookies (UE)</li>
                                                 </ul>
-                                                    <div class="container-fluid">
+                                                    <div class="container-fluid container-lg container-md container-sm">
                                                         <img src="./images/tarjetas_admitidas1-300x43.png" alt="">
                                                     </div>
                                             </div>
-                                                    <div class="container-fluid">
+                                                    <div class="container-fluid container-lg container-md container-sm">
                                                         <p class="dorado fs-6">
                                                             Turismo Responsable
                                                         </p>

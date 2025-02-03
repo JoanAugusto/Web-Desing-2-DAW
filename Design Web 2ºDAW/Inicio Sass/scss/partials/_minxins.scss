@@ -1,0 +1,24 @@
+
+@mixin radius-rounded($border-radius:50px,$border:2px solid $company-color){
+    border-radius: $border-radius;
+    border: $border;
+}
+@mixin flex-between{
+    display: flex;
+    justify-content: space-between;
+   
+}
+@mixin box($width:100px,$height:100px){
+    width: $width;
+    height: $height;
+    @include radius-rounded;
+}
+
+@mixin italic-links{
+    a{
+        text-decoration: none;
+        color: $company-color;
+        font-style: italic;
+        font-weight: bold;
+    }
+}

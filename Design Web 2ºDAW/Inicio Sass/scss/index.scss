@@ -1,0 +1,43 @@
+@import 'partials/variables';/*Simepre comillas simples*/
+@import 'partials/_minxins';
+@import 'partials/_breakpoints';
+/*En sass es recomendable poner las variables en un solo fichero aparte*/
+// body{
+//     background-color: red;
+// }
+
+*{
+    padding: 0;
+    margin: 0;
+}
+@include italic-links;
+header{
+    ul{
+        @include flex-between;
+        list-style-type: none;
+        background-color:$company-color;
+        color:#fff;
+        padding:$padding-default;
+    }
+}
+main{
+    padding: 16px;
+    .boxes{
+       @include flex-between;
+       @include display-medium{
+        flex-direction: column;
+        align-items: center;
+        
+       };
+            .box{
+                @include box;
+                background-color: aquamarine;
+                margin-bottom: 3%;
+            }
+    }
+}
+footer{
+    background-color: $company-color;
+    bottom: 0;
+
+}

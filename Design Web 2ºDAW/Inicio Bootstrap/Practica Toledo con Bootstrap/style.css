@@ -206,5 +206,10 @@
     .height{
         height: 40vh;
     }
-    /*Icons prinicpal*/
+        
+    /*tamaño de texto en Toledo*/
+    .fixsizeText{
+        font-size: 3vh;
+    }
+
     
