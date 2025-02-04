@@ -1,6 +1,7 @@
 @import 'partials/variables';/*Simepre comillas simples*/
 @import 'partials/_minxins';
 @import 'partials/_breakpoints';
+@import 'partials/_functions';
 /*En sass es recomendable poner las variables en un solo fichero aparte*/
 // body{
 //     background-color: red;
@@ -10,7 +11,43 @@
     padding: 0;
     margin: 0;
 }
+    @for $i from 1 to 5 { //to te quita 1 no te lo pone al numero deseado
+        .li-#{$i}{
+            @if $i % 2==0{
+                color: $text-danger;
+              
+            }@else {
+                color:$company-color ;
+            }
+
+
+           @if $i== 4 {
+                background-color: green;
+                padding: $padding-default;
+                color: white;
+                width: fit-content;//fir coontent que ocupe el tamaño del contenido
+           }
+        }
+    }
+
 @include italic-links;
+
+$boxes-color:orange,blue,yellow,black;
+
+    @each $box-color in $boxes-color{
+        .box-#{$box-color}{
+            background-color:$box-color ;
+        }
+    }
+
+    $font-sizes: ('tiny':8px,'small':10px,'normal':14px,'large':20px);
+
+    @each $key ,$value in $font-sizes{
+        .#{$key}{//interpolar
+            font-size: $value;
+        }
+    }
+    
 header{
     ul{
         @include flex-between;
@@ -18,6 +55,8 @@ header{
         background-color:$company-color;
         color:#fff;
         padding:$padding-default;
+        font-size: em(24px);
+       
     }
 }
 main{
@@ -31,10 +70,30 @@ main{
        };
             .box{
                 @include box;
-                background-color: aquamarine;
+                // background-color: aquamarine;
                 margin-bottom: 3%;
             }
     }
+
+    p{
+       
+        font-weight: weight("bold");
+        font-size: em(20px);
+    }
+   
+    .critical-error{//herencia a error quiero que error herede esta clase
+        border: 2px solid $text-danger;
+    }
+
+    
+        .error{
+            @extend .critical-error;//forma de heredar , podemos poner coma
+            @extend .large;
+            color: $text-danger;
+        }
+
+       
+   
 }
 footer{
     background-color: $company-color;

@@ -6,6 +6,26 @@
   margin: 0;
 }
 
+.li-1 {
+  color: #5cd;
+}
+
+.li-2 {
+  color: #ff0000;
+}
+
+.li-3 {
+  color: #5cd;
+}
+
+.li-4 {
+  color: #ff0000;
+  background-color: green;
+  padding: 16px;
+  color: white;
+  width: fit-content;
+}
+
 a {
   text-decoration: none;
   color: #5cd;
@@ -13,13 +33,46 @@ a {
   font-weight: bold;
 }
 
+.box-orange {
+  background-color: orange;
+}
+
+.box-blue {
+  background-color: blue;
+}
+
+.box-yellow {
+  background-color: yellow;
+}
+
+.box-black {
+  background-color: black;
+}
+
+.tiny {
+  font-size: 8px;
+}
+
+.small {
+  font-size: 10px;
+}
+
+.normal {
+  font-size: 14px;
+}
+
+.large, main .error {
+  font-size: 20px;
+}
+
 header ul {
   display: flex;
   justify-content: space-between;
   list-style-type: none;
   background-color: #5cd;
-  color: #fff;
+  
   padding: 16px;
+  font-size: 1.5em;
 }
 
 main {
@@ -40,8 +93,17 @@ main .boxes .box {
   height: 100px;
   border-radius: 50px;
   border: 2px solid #5cd;
-  background-color: aquamarine;
   margin-bottom: 3%;
+}
+main p {
+  font-weight: 700;
+  font-size: 1.25em;
+}
+main .critical-error, main .error {
+  border: 2px solid #ff0000;
+}
+main .error {
+  color: #ff0000;
 }
 
 footer {

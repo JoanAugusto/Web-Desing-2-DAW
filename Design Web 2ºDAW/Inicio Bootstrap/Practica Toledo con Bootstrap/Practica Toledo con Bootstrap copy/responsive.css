@@ -1,0 +1,41 @@
+/*Las mediasQueries*/
+
+@media all and (max-width:2560px){
+    .responsiveMenu{
+        visibility: hidden;
+        pointer-events: none;
+    }
+}
+
+@media all and (max-width:1352px){
+    .fixsizeText{
+        font-size: 2vh;
+    }
+}
+
+@media all and(max-width:1026px){
+    .responsiveLi{
+        padding-left: 100%;
+    }
+}
+
+    @media all and (max-width:1002px){
+        .hiddenResponsive{
+            visibility: hidden;
+            pointer-events: none;
+            margin: 0;
+        }
+        nav{
+            height: 15vh;
+        }
+        .responsiveMenu{
+            visibility: visible;
+            pointer-events: all;
+        }
+            .visibleResponsive{
+                visibility: visible;
+                pointer-events: all;
+            }
+    }
+
+
