@@ -7,14 +7,17 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="./style.css">
     <link rel="stylesheet" href="./responsive.css">
+    <link rel="stylesheet" href="./css/index.css">
 </head>
 <body class="w-100 h-100">
 <header class="w-100 h-100"> 
-       <nav class="navbar  navbar-expand   d-flex flex-column p-0  " >
-        <div class="container-fluid d-flex justify-content-center">
-            <img class="logoToledo" src="./images/logo-toledo-3-culturas-300.png" alt="">
+    <nav class="navbar navbar-expand p-0  " >
+
+        <div class="  container-fluid  d-flex justify-content-center ">
+            <img class=" logoToledo" src="./images/logo-toledo-3-culturas-300.png" alt="">
         </div>
-        <div class="container-fluid collapse navbar-collapse  d-flex justify-content-between responsiveMenu">
+
+        <div class="container-fluid collapse navbar-collapse d-flex justify-content-between responsiveMenu">
             <p class="marronRojizo fs-6">Seleccionar página</p>
             <button class="btn btn-primary" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
                 <img src="./imagesIcons/menu_24dp_800000_FILL0_wght400_GRAD0_opsz24.svg" alt="">
@@ -22,14 +25,14 @@
             
         </div>
        
-    
+
             <div class="container-fluid  collapse navbar-collapse d-flex justify-content-center hiddenResponsive" id="navbar">
-                <ul class="navbar-nav position-relative firstMenu d-flex flex-wrap ">
-                    <li class="nav-item p-2 dorado" type="button">Inicio </li>
-                    <li class="nav-item p-2  marronRojizo" type="button" >Quiénes somos</li>
-                    <li class="nav-item p-2 marronRojizo" type="button" >Nuestras rutas por Toledo <img src="./images/caret-down-fill.svg" alt="">
+                <ul class="navbar-nav position-relative firstMenu ">
+                    <li class="nav-item p-2 dorado" type="button"><a class="dorado quitStyletag" href="./toledo.html">Inicio</a></li>
+                    <li class="nav-item p-2 " type="button" >Quiénes somos</li>
+                    <li class="nav-item p-2" type="button" ><a href=""></a>Nuestras rutas por Toledo <img src="./images/caret-down-fill.svg" alt="">
                         <ul class="secondMenu position-absolute  ">
-                            <li><a class="quitStyletag marronRojizo" href="./vida.html">Vida en la judería de Toledo</a></li>
+                            <li><a class="quitStyletag" href="./vida.html">Vida en la judería de Toledo</a></li>
                             <li> RUTA NOCHE TOLEDANA</li>
                             <li> Plazas desconocidas de Toledo</li>
                             <li> Ruta Toledo 3 Culturas</li>
@@ -58,35 +61,55 @@
 
                     </li>
                     <li class="nav-item p-2 marronRojizo" type="button"  >Regala una ruta</li>
-                    <li class="nav-item p-2 marronRojizo" type="button" ><a class="quitStyletag marronRojizo" href="./contacto.html">Contacto</a></li>
-                    <li class="nav-item p-2 marronRojizo " type="button" >Blog</li>
-                    <li class="nav-item p-2  " type="button" ><img class="marronRojizo " src="./images/search.svg" alt=""></li>
+                    <li class="nav-item p-2 marronRojizo" type="button" >Contacto</li>
+                    <li class="nav-item p-2 marronRojizo" type="button" >Blog</li>
+                    <li class="nav-item p-2 " type="button" ><img class="marronRojizo" src="./images/search.svg" alt=""></li>
                 </ul>
             </div>
+
+           
     </nav>
+
     <div class="collapse " id="collapseExample">
         <div class="card card-body">
-            <ul class="navbar-nav position-relative firstMenu d-flex flex-column flex-wrap visibleResponsive z-3">
+            <ul class="navbar-nav position-relative firstMenu  visibleResponsive z-3">
                 <li class="nav-item p-2 dorado">Inicio</li>
-                <li class="nav-item p-2 marronRojizo">Quiénes somos</li>
-                <li class="nav-item p-2 marronRojizo">
-                    Nuestras rutas por Toledo <img src="./images/caret-down-fill.svg" alt="">
-                    <ul class="secondMenu position-absolute">
-                        <li><a class="quitStyletag marronRojizo" href="./vida.html">Vida en la judería de Toledo</a></li>
-                        <li>RUTA NOCHE TOLEDANA</li>
-                        <li>Plazas desconocidas de Toledo</li>
-                        <li>Ruta Toledo 3 Culturas</li>
+                <li class="nav-item p-2 ">Quiénes somos</li>
+                <li class="nav-item p-2 dropdown ">
+
+                    <a href="#" class=" quitStyletag  btn-secondary dropdown-toggle" data-bs-toggle="dropdown" role="button">Nuestras rutas por Toledo</a> 
+                   
+                    <ul class="  dropdown-menu">
+                        <li class="dropdown-item"><a class="quitStyletag " href="./vida.html">Vida en la judería de Toledo</a></li>
+                        <li  class="dropdown-item">RUTA NOCHE TOLEDANA</li>
+                        <li  class="dropdown-item">Plazas desconocidas de Toledo</li>
+                        <li  class="dropdown-item">Ruta Toledo 3 Culturas</li>
+                        <li  class="dropdown-item"> Los mejores miradores de Toledo</li>
+                            <li  class="dropdown-item"> Ruta Pulsera turística de Toledo</li>
+                            <li  class="dropdown-item"> Ruta mujeres ilustres toledanas</li>
+                            <li  class="dropdown-item"> Toledo ciudad de la magia</li>
+                            <li  class="dropdown-item"> el mudejár toledano</li>
+                            <li  class="dropdown-item"> Ruta la catedral y sus rincones</li>
+                            <li  class="dropdown-item"> Ruta Toledo actual</li>
+                            <li  class="dropdown-item"> Casas singulares de Toledo</li>
+                            <li  class="dropdown-item"> Toledo en guerra</li>
+                            <li  class="dropdown-item"> Ruta Murallas y elementos defensivos
+                                de Toledo
+                            </li>
+                            <li  class="dropdown-item"> Ruta Toledo y el agua</li>
                     </ul>
                 </li>
-                <li class="nav-item p-2 marronRojizo">Rutas privadas <img src="./images/caret-down-fill.svg" alt="">
-                    <ul class="thirdMenu position-absolute">
-                        <li>Rutas para grupos</li>
-                        <li>Rutas para colegios y <br>centros docentes</li>
+                <li class="nav-item p-2 dropdown ">
+                    <a href="#" class=" quitStyletag btn-secondary dropdown-toggle" role="button" data-bs-toggle="dropdown"> Rutas privadas </a>
+                    
+                    <ul class="dropdown-menu">
+                        <li class="dropdown-item">Rutas para grupos</li>
+                        <li class="dropdown-item">Rutas para colegios y <br>centros docentes</li>
                     </ul>
                 </li>
-                <li class="nav-item p-2 marronRojizo">Regala una ruta</li>
-                <li class="nav-item p-2 marronRojizo"><a class="quitStyletag marronRojizo" href="./contacto.html">Contacto</a></li>
-                <li class="nav-item p-2 marronRojizo">Blog</li>
+                <li class="nav-item p-2 ">Regala una ruta</li>
+                <li class="nav-item p-2 "><a class="quitStyletag marronRojizo" href="./contacto.html">Contacto</a></li>
+                <li class="nav-item p-2 ">Blog</li>
                 <li class="nav-item p-2"><img class="marronRojizo" src="./images/search.svg" alt=""></li>
             </ul>
         </div>
@@ -467,61 +490,60 @@
         </div>
 
 
-            <footer class="container-fluid  w-100 bg-dark d-flex justify-content-center ">
-                <div class="container-fluid container-lg container-md container-sm d-flex flex-row justify-content-center w-75">
+        <footer class="container-fluid w-100 bg-dark   ">
+              
 
                 
-                            <div class="container container-lg container-md container-sm ">
-                                <div class="container container-lg container-md container-sm ">
-                                    <p class="dorado fs-6">Enlaces de Interés:</p>
-                                    <p class="text-light fs-6">Templarios, instrumentos de tortura,</p>
-                                    <p class="text-light fs-6">mazmorras</p>
-                                    <p class="text-light fs-6">Ayuntamiento de Toledo</p>
-                                    <p class="text-light fs-6">Estación de autobuses de Toledo</p>
-                                    <p class="text-light fs-6">Ave a Toledo</p>
-                                    <p class="text-light fs-6">Plano turístico de Toledo</p>
-                                </div>
-                                        <div class="imageFooter">
-                                            <img src="./images/Logo-SICTED-ES-EN-alargado-510x210.jpg" alt="">
-                                        </div>
-                            </div>
-                                    <div class="container-fluid container-lg container-md container-sm ">
-                                        <div class="container-fluid container-lg container-md container-sm">
-                                            <p class="dorado fs-6">Buscate una ruta:</p>
-                                                <div class="container-fluid container-lg container-md container-sm d-flex flex-row ">
-                                                    <input type="text" class="form-control sizeButton">
-                                                    <button class="btn btn-light">Buscar</button>
-                                                </div>
-                                        </div>
-                                        <div class="container-fluid container-lg container-md container-sm ">
-                                            <p class="dorado">Reserva en:</p>
-                                            <p class="text-light">603 420 820</p>
-                                            <p class="text-light">info@toledo3culturas.com</p>
-                                        </div>
-                                    </div>
-                                            <div class="container-fluid container-lg container-md container-sm">
-                                                <p class="dorado">Otros Enlaces</p>
-                                                <ul>
-                                                    <li class="text-light">Forma de pago</li>
-                                                    <li class="text-light">Política de Privacidad</li>
-                                                    <li class="text-light">Política de cookies</li>
-                                                    <li class="text-light">Aviso Legal</li>
-                                                    <li class="text-light">Encuesta de Satisfacción</li>
-                                                    <li class="text-light">Política de cookies (UE)</li>
-                                                </ul>
-                                                    <div class="container-fluid container-lg container-md container-sm">
-                                                        <img src="./images/tarjetas_admitidas1-300x43.png" alt="">
-                                                    </div>
-                                            </div>
-                                                    <div class="container-fluid container-lg container-md container-sm">
-                                                        <p class="dorado fs-6">
-                                                            Turismo Responsable
-                                                        </p>
-                                                        <img class="w-50" src="./images/Turismo-Seguro-logo.jpg" alt="">
-                                                    </div>
+            <div class="container ">
+                <div class="container ">
+                    <p class="dorado fs-6">Enlaces de Interés:</p>
+                    <p class="text-light fs-6">Templarios, instrumentos de tortura,</p>
+                    <p class="text-light fs-6">mazmorras</p>
+                    <p class="text-light fs-6">Ayuntamiento de Toledo</p>
+                    <p class="text-light fs-6">Estación de autobuses de Toledo</p>
+                    <p class="text-light fs-6">Ave a Toledo</p>
+                    <p class="text-light fs-6">Plano turístico de Toledo</p>
                 </div>
+                        <div class="imageFooter">
+                            <img src="./images/Logo-SICTED-ES-EN-alargado-510x210.jpg" alt="">
+                        </div>
+            </div>
+                    <div class="container-fluid ">
+                        <div class="container-fluid">
+                            <p class="dorado fs-6">Buscate una ruta:</p>
+                                <div class="container-fluid d-flex flex-row ">
+                                    <input type="text" class="form-control sizeButton">
+                                    <button class="btn btn-light">Buscar</button>
+                                </div>
+                        </div>
+                        <div class="container-fluid ">
+                            <p class="dorado">Reserva en:</p>
+                            <p class="text-light">603 420 820</p>
+                            <p class="text-light">info@toledo3culturas.com</p>
+                        </div>
+                    </div>
+                            <div class="container-fluid">
+                                <p class="dorado">Otros Enlaces</p>
+                                <ul>
+                                    <li class="text-light">Forma de pago</li>
+                                    <li class="text-light">Política de Privacidad</li>
+                                    <li class="text-light">Política de cookies</li>
+                                    <li class="text-light">Aviso Legal</li>
+                                    <li class="text-light">Encuesta de Satisfacción</li>
+                                    <li class="text-light">Política de cookies (UE)</li>
+                                </ul>
+                                    <div class="container-fluid">
+                                        <img src="./images/tarjetas_admitidas1-300x43.png" alt="">
+                                    </div>
+                            </div>
+                                    <div class="container-fluid">
+                                        <p class="dorado fs-6">
+                                            Turismo Responsable
+                                        </p>
+                                        <img class="w-50" src="./images/Turismo-Seguro-logo.jpg" alt="">
 
-            </footer>
+
+</footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>

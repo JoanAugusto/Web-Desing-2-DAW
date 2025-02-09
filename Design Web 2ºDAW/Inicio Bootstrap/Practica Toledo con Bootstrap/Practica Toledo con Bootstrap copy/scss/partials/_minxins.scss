@@ -1,0 +1,64 @@
+@mixin flex-column{
+    display: flex;
+    flex-direction: column;
+}
+@mixin flex-center{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+/*alinear algo en el centro*/
+@mixin object-center{
+    align-self: center;
+    justify-self: center;
+}
+
+/*Zona animación navbar Rutas y Rutas Privadas*/
+
+@mixin alignLiRutas($mLeft ){
+    margin-left:$mLeft;
+       
+    visibility: hidden;
+   pointer-events: none;
+ 
+   transition: margin-left 0.6s;
+}
+@mixin finalanimationRutas($width,$height,$mLeft,$mTop){
+    visibility: visible;
+       
+        width: $width;
+        height: $height;
+        border: 1px solid rgba(0,0,0,0.03);
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        column-gap: 2%;
+        row-gap: 1%;
+        grid-template-rows: auto auto auto auto;
+        list-style: none;
+        pointer-events: visible;
+        margin-left:$mLeft;
+        margin-top:$mTop;
+        z-index: 50;
+}
+/*Zona animacion Privadas en NavBAr*/
+@mixin finlAnimationRutasPrivadas($width,$height,$mLeft,$mTop){
+    visibility: visible;
+    pointer-events: visible;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    width: $width;
+    height: $height;
+    list-style: none;
+    margin-left: $mLeft;
+    margin-top: $mTop;
+    z-index: 50;
+    border: 1px solid rgba(0,0,0,0.03);
+}
+
+//Animacion logo
+    @mixin trasnform-image($porcentaje:100%){
+        transform: scale($porcentaje);
+         
+    }
+    

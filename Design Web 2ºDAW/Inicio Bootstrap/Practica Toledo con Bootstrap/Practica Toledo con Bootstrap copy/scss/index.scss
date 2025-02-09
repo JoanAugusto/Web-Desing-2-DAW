@@ -1,0 +1,93 @@
+/*EN forma de columna flex*/
+@import 'partials/_minxins';
+@import 'partials/variables';
+@import 'partials/breakpoints';
+
+header{
+    nav{
+        @include flex-column;
+     }
+}
+
+// zona animacion Nav
+.secondMenu{
+    @include alignLiRutas($mLeft:-50%);
+}
+    .firstMenu li:hover > .secondMenu{
+        @include finalanimationRutas($width:100%,$height:40vh,$mLeft:-20%,$mTop:0.5%);
+        background-color: $color-backgroundWhite;
+        @include object-center;
+
+    }
+
+.thirdMenu{
+    @include alignLiRutas($mLeft:-20%);
+}
+    .firstMenu li:hover > .thirdMenu{
+        @include finlAnimationRutasPrivadas($width:25%,$height:20vh,$mLeft:-5%,$mTop:0.6%);
+        background-color: $color-backgroundWhite;
+        @include object-center;
+    }
+
+   
+
+/*Colores de la pagina*/
+li{
+    color:$color-rojizo;
+}
+a{
+    color:$color-rojizo;
+}
+    /*Animacion Logo*/
+
+    .logoToledo{
+        width: 10%;
+        @include trasnform-image();
+        transition: transform,0.3s linear;
+    }
+        .logoToledo:hover{
+            transform: scale(120%);
+        }
+        
+    /*
+    -----------------------------------
+                Zona Footer
+    -----------------------------------            
+    */
+
+   
+    footer{
+        @include flex-center;
+        
+       
+       @include display-medium{
+        
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(4,1fr);
+        row-gap: 4%;
+        height: auto;
+       
+       }
+
+      
+    }
+
+    /*
+    -------------------------------------
+            Zona Breakpoints
+    -------------------------------------
+
+    */
+
+    .flexContact{
+        @include display-medium{
+           @include flex-column;
+        }
+    }
+
+    /*Esto es para arreglar el aside */
+    
+    
+
+    
